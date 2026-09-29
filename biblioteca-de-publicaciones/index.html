@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca · El Comparador</title>
+<meta name="description" content="Todas nuestras publicaciones en un solo lugar.">
+<link rel="canonical" href="https://charlie-pixelz.github.io/el-comparador/biblioteca-de-publicaciones">
+<meta property="og:title" content="Biblioteca · El Comparador">
+<meta property="og:description" content="Todas nuestras publicaciones en un solo lugar.">
+<meta property="og:type" content="article">
+<link rel="stylesheet" href="../css/el-comparador.css">
+</head>
+<body class="library">
+<header class="site-header">
+<a class="site-header__logo" href="../"><img src="../assets/logo/logo_blue.svg" alt="El Comparador"></a>
+<nav class="site-nav">
+<a href="../biblioteca-de-publicaciones/?cat=Seguros">Seguros</a>
+<a href="../biblioteca-de-publicaciones/?cat=Tecnología">Tecnología</a>
+<a href="../biblioteca-de-publicaciones/?cat=Cultura">Cultura</a>
+<a href="../biblioteca-de-publicaciones/?cat=Finanzas">Finanzas</a>
+<a href="../biblioteca-de-publicaciones/?cat=Actualidad">Actualidad</a>
+</nav>
+<div class="site-header__cta"><a class="btn btn--primary btn--sm" href="#newsletter">Suscríbete</a></div>
+<button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-nav" id="mobileNav" hidden>
+<a href="../biblioteca-de-publicaciones/?cat=Seguros">Seguros</a>
+<a href="../biblioteca-de-publicaciones/?cat=Tecnología">Tecnología</a>
+<a href="../biblioteca-de-publicaciones/?cat=Cultura">Cultura</a>
+<a href="../biblioteca-de-publicaciones/?cat=Finanzas">Finanzas</a>
+<a href="../biblioteca-de-publicaciones/?cat=Actualidad">Actualidad</a>
+<a class="btn btn--primary btn--block" href="#newsletter">Suscríbete</a>
+</nav>
+<section class="library-hero">
+<picture>
+<source media="(max-width:640px)" srcset="/assets/img/nueva_portada_mobile.png">
+<img src="../assets/img/nueva_portada_desktop.png" alt="">
+</picture>
+<div class="library-hero__content">
+<h1 class="library-hero__title">Todo lo que nos apasiona, en un solo <span class="serif">lugar</span></h1>
+</div>
+</section>
+
+<section class="library-filter">
+<div class="filter" role="tablist">
+<button class="filter__pill" type="button" role="tab" aria-selected="true" data-cat="Todo">Todo</button>
+<button class="filter__pill" type="button" role="tab" aria-selected="false" data-cat="Seguros">Seguros</button>
+<button class="filter__pill" type="button" role="tab" aria-selected="false" data-cat="Tecnología">Tecnología</button>
+<button class="filter__pill" type="button" role="tab" aria-selected="false" data-cat="Cultura">Cultura</button>
+<button class="filter__pill" type="button" role="tab" aria-selected="false" data-cat="Finanzas">Finanzas</button>
+<button class="filter__pill" type="button" role="tab" aria-selected="false" data-cat="Actualidad">Actualidad</button>
+</div>
+</section>
+
+<section class="filter-mobile" id="filterMobile">
+<div class="filter-mobile__row">
+<span class="filter-mobile__label">Filtrar:</span>
+<button class="filter-mobile__current" type="button" aria-haspopup="listbox" aria-expanded="false">
+<span class="filter-mobile__value">Todo</span>
+<span class="filter-mobile__caret"></span>
+</button>
+</div>
+<div class="filter-mobile__list" role="listbox">
+<button class="filter-mobile__option" type="button" role="option">Seguros</button>
+<button class="filter-mobile__option" type="button" role="option">Tecnología</button>
+<button class="filter-mobile__option" type="button" role="option">Cultura</button>
+<button class="filter-mobile__option" type="button" role="option">Finanzas</button>
+<button class="filter-mobile__option" type="button" role="option">Actualidad</button>
+</div>
+</section>
+
+<section class="library-grid">
+<div class="grid" id="libraryGrid">
+<a data-cat="Finanzas" class="card" href="../chile-se-prepara-para-el-trabajo-del-futuro/">
+<div class="card__media"><img src="../assets/img/posts/15aebf2c2a41.jpg" alt="skyline isométrico dividido entre comercio tradicional a la izquierda y ciudad digital azul a la derecha" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">Chile se prepara para el trabajo del futuro</h3>
+<p class="card__excerpt">Si últimamente has abierto LinkedIn, probablemente lo has visto: parece que todos hablan del “futuro del trabajo”.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>13 ago 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../es-invierno-pero-esto-te-importara-en-enero/">
+<div class="card__media"><img src="../assets/img/posts/5eac167e72b0.jpg" alt="escritorio de arquitecto con planos enrollados, café, lápices y compás sobre mapa de calles, plaza arbolada de fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Es invierno, pero esto te importará en enero</h3>
+<p class="card__excerpt">Sé que suena raro hablar de calor extremo mientras en Chile todos están buscando la parka más gruesa del clóset.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>13 ago 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../realmente-todo-tiempo-pasado-fue-mejor/">
+<div class="card__media"><img src="../assets/img/posts/7d4ef50f99ed.jpg" alt="díptico: libros, cámara análoga, casete y cartas escritas a mano junto a un teléfono azul saturado de íconos de redes sociales" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Realmente todo tiempo pasado fue mejor?</h3>
+<p class="card__excerpt">Si eres como yo y revisas TikTok e Instagram constantemente, te habrás dado cuenta de que estas redes son casi como un experimento social.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>13 ago 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../algunos-de-los-conciertos-imperdibles-de-este-2026/">
+<div class="card__media"><img src="../assets/img/posts/4736146d2512.jpg" alt="escenario rosa rodeado de altavoces, notas musicales naranjas y una grilla de fechas sobre un claro nevado" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Algunos de los conciertos imperdibles de este 2026</h3>
+<p class="card__excerpt">El hecho de que estemos entrando al mes de julio no se puede creer. Pero lo que tampoco se puede creer es la cantidad de artistas que han…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>13 ago 2026</span><span class="byline__sep">·</span><span>6 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../javiera-mena-esquemas-juveniles-y-el-nacimiento-de-una/">
+<div class="card__media"><img src="../assets/img/posts/b1ffe75653bd.jpg" alt="mujer joven con largo pelo negro, collar con cruz, sosteniendo guitarra frente a pared de piedra" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Javiera Mena, Esquemas juveniles y el nacimiento de una nueva era en la música chilena</h3>
+<p class="card__excerpt">Cuando hablamos de trabajos clásicos de la música chilena, siempre se nombran los discos de Violeta Parra, Víctor Jara, Los Jaivas o…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>13 ago 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../chile-y-el-mundial/">
+<div class="card__media"><img src="../assets/img/posts/46b762d77edb.png" alt="Trofeo azul con monedas de oro fluyendo hacia la derecha, símbolos de riqueza y éxito financiero" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Cuánto perdió Chile por no estar en el Mundial?</h3>
+<p class="card__excerpt">Chile no está en el Mundial 2026. Ya lo sabemos, ya dolió, ya hicimos memes tristes y nos resignamos a ver la Copa del Mundo desde la casa.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>15 jul 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../chile-o-europa/">
+<div class="card__media"><img src="../assets/img/posts/54cbeded2c23.png" alt="Cinta métrica midiendo horizonte urbano con rascacielos, construcciones y volcán nevado al fondo bajo cielo azul claro" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Chile se volvió tan caro como Europa?</h3>
+<p class="card__excerpt">Hace casi dos años me vine a vivir a Italia y llegué con una idea muy instalada en la cabeza: que todo iba a ser mucho más caro que en…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>23 jun 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../adultos-mayores-ia/">
+<div class="card__media"><img src="../assets/img/posts/23a5605198e3.png" alt="Tres generaciones sonrientes usando laptop rosa sobre mesa de madera con patrones abstractos azul y coral de fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Adultos mayores + IA: la brecha que falta por cerrar</h3>
+<p class="card__excerpt">Hablamos mucho de inteligencia artificial. La tenemos integrada en nuestra vida, nos ayuda en nuestros trabajos y le preguntamos cosas de…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>23 jun 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../neuronas-con-ia/">
+<div class="card__media"><img src="../assets/img/posts/a399c4ad2033.png" alt="Silueta azul de perfil con cerebro texturizado en ramas doradas sobre fondo con gradiente verde y azul" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">La noticia parece sci-fi, pero es real</h3>
+<p class="card__excerpt">Durante años hemos pensado en la inteligencia artificial como algo súper frío: servidores gigantes, computadores procesando datos y…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>23 jun 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../pulp-britpop/">
+<div class="card__media"><img src="../assets/img/posts/44b48f9196d9.png" alt="Cuatro profesionales en trajes oscuros posando frente a fondo verde para retrato corporativo" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">PULP: britpop para gente común</h3>
+<p class="card__excerpt">Si de britpop se trata, la discusión siempre se resume a la existencia de dos grupos: Oasis y Blur. Ambas bandas, que siempre mostraron una…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>05 jun 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../tecnologia-proposito/">
+<div class="card__media"><img src="../assets/img/posts/d34fd1b50dce.png" alt="Perro blanco corre feliz entre flores azules con casas asiáticas de fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Tecnología con propósito</h3>
+<p class="card__excerpt">Estamos tan acostumbrados a ver la inteligencia artificial hacer cosas random (dibujar imágenes raras, responder preguntas existenciales…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>05 jun 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../maynard-james-keenan/">
+<div class="card__media"><img src="../assets/img/posts/cc6eecd667fb.png" alt="hombre con gafas negras y traje azul de rayas sobre camisa vino, retrato de estudio" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Las múltiples máscaras de Maynard James Keenan</h3>
+<p class="card__excerpt">Hay pocos cantantes más multifacéticos, inquietos y distintivos en el rock contemporáneo que Maynard James Keenan, voz de Tool, A Perfect…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>05 jun 2026</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../comparadores-service/">
+<div class="card__media"><img src="../assets/img/posts/3bb79f0dfba7.png" alt="dos hombres con gafas de sol junto a motos Vespa negras conversando en calle empedrada" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Comparadores Service</h3>
+<p class="card__excerpt">El recordado programa noventero “Venga Conmigo” marcó a toda una generación en Chile. Su exitoso segmento “Corazones Service” se transformó…</p>
+<div class="byline"><span class="byline__name">Claudio Ramirez</span><span class="byline__sep">·</span><span>07 may 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../drexler-candombe/">
+<div class="card__media"><img src="../assets/img/posts/f6431e7b7b5c.png" alt="hombre sentado con gafas junto a la palabra Tayaca en letras grandes sobre fondo oscuro" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">De Candombe y tradición: la gran apuesta de Jorge Drexler en su nuevo álbum</h3>
+<p class="card__excerpt">De cara a las presentaciones del cantautor uruguayo Jorge Drexler en Chile los próximos 25 y 26 de abril, importante es saber el contexto…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>07 abr 2026</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../biometria-con-ia/">
+<div class="card__media"><img src="../assets/img/posts/c9241d471bb8.png" alt="primer plano de un ojo y rostro en blanco y negro con textura de líneas y una credencial con código de barras" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Biometría con IA: muy bueno para ser verdad</h3>
+<p class="card__excerpt">¿Te has preguntado qué pasaría hoy si llegan a robarte el teléfono? Probablemente tengas las apps importantes con clave, pero ¿qué pasaría…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>07 abr 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../fe-con-ia/">
+<div class="card__media"><img src="../assets/img/posts/6b62e529673f.png" alt="figura religiosa translúcida iluminada en el altar de una catedral gótica con vitrales" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Se puede construir fe con inteligencia artificial?</h3>
+<p class="card__excerpt">En todas las empresas parece ser el tema del año: la inteligencia artificial. Hay programas dentro de las compañías donde se incentiva su…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>07 abr 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../gen-z-amor/">
+<div class="card__media"><img src="../assets/img/posts/837db554f718.png" alt="ilustración de una pareja sentada bajo un farol callejero por la noche, en tonos azules" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">El lenguaje del amor de los Gen Z</h3>
+<p class="card__excerpt">Para los millennials, ver nuevas parejas, compromisos y vacaciones juntos en redes sociales es la norma.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>07 abr 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../review-harry-styles/">
+<div class="card__media"><img src="../assets/img/posts/8f6a7edcbd14.jpg" alt="hombre con camisa clara y corbata en un set de concierto con luces de neón y piano" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Review: Harry Styles – ‘Kiss All The Time. Disco, Occasionally’</h3>
+<p class="card__excerpt">Han pasado cuatro años desde que el último lanzamiento del ex One Direction, Harry Styles, llegó a nuestras vidas.</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>07 abr 2026</span><span class="byline__sep">·</span><span>6 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../saber-preguntar-ia/">
+<div class="card__media"><img src="../assets/img/posts/3c433d105d3d.png" alt="persona caminando por un sendero rural rodeada de signos de interrogación flotantes" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">El poder de saber preguntar</h3>
+<p class="card__excerpt">Durante años, ser “digital” era saber usar herramientas: mandar correos, hacer una planilla o buscar en Google.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>07 abr 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../arte-ia/">
+<div class="card__media"><img src="../assets/img/posts/245210a108e8.png" alt="cuatro máscaras de perfil con distintas texturas digitales y de madera representando identidades de IA" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Cuando la IA sube al escenario</h3>
+<p class="card__excerpt">Por años, la tecnología en el arte estaba ahí, pero bien piola. Luces, sonido, efectos… Funcionaba perfecto, pero no era protagonista.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>07 abr 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../conciertos-2026-parte01/">
+<div class="card__media"><img src="../assets/img/posts/3d51d39dff76.png" alt="multitud frente a un escenario iluminado de un festival musical nocturno entre edificios" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Algunos de los conciertos imperdibles de este 2026</h3>
+<p class="card__excerpt">Estamos en marzo, notoriamente uno de los meses más fuertes si hablamos de shows en vivo en Latinoamérica, y Chile no está lejos de ser la…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>07 abr 2026</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../brecha-digital/">
+<div class="card__media"><img src="../assets/img/posts/c64dbbb2f13a.png" alt="dos personas sentadas de espaldas usando laptops, una con una idea iluminada sobre su cabeza y la otra con símbolos de duda" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">La brecha digital que no vemos</h3>
+<p class="card__excerpt">Si uno se queda con LinkedIn, X o el típico discurso tech, pareciera que todo el mundo ya usa inteligencia artificial para trabajar mejor…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>11 mar 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../review-gorillaz-the-mountain/">
+<div class="card__media"><img src="../assets/img/posts/c50de2f66f2f.png" alt="los cuatro personajes animados de Gorillaz de pie sobre la cima de una montaña rodeados de nubes" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Review: Gorillaz – ‘The Mountain’, escalando la montaña del sonido</h3>
+<p class="card__excerpt">El noveno álbum de estudio de la banda virtual Gorillaz, creada por Damon Albarn y Jamie Hewlett, se titula The Mountain y nos invita a…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>11 mar 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../ia-empezo-a-vender/">
+<div class="card__media"><img src="../assets/img/posts/9b7f71cccfd4.png" alt="mujer con vestido amarillo usando laptop rodeada de íconos de chat flotando entre nubes" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">El día en que la IA empezó a vender</h3>
+<p class="card__excerpt">Hoy, usar inteligencia artificial todavía se siente bastante neutro. Entramos, hacemos una pregunta - ya sea sobre plata, viajes…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>11 mar 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../claude-ia/">
+<div class="card__media"><img src="../assets/img/posts/96d4dd2f0a3e.png" alt="mano escribiendo en un cuaderno junto a una laptop con interfaz de código holográfica azul" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Claude: la nueva herramienta viral de IA</h3>
+<p class="card__excerpt">Probablemente lo has visto en LinkedIn desde hace algunas semanas. Todo el mundo habla de Claude, la nueva herramienta de inteligencia…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>26 feb 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../book-clubs/">
+<div class="card__media"><img src="../assets/img/posts/bfb94b679325.png" alt="tres mujeres leyendo libros sentadas en un sofá naranja con paredes azules y naranjas" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Los nuevos &#x27;book clubs&#x27;</h3>
+<p class="card__excerpt">Es típico de las series o películas tipo Jane Austen. Tres personas leyendo en una sala iluminada, comentando la historia o los personajes…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>26 feb 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../planes-de-verano/">
+<div class="card__media"><img src="../assets/img/posts/9156e42dcb3e.png" alt="mujer frente a un collage de pantallas y fotos de viajes proyectadas en una pared rosa" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Dónde mirar cuando todo compite por tu atención</h3>
+<p class="card__excerpt">En tiempos de exceso de información, encontrar panoramas de fin de semana y planes entretenidos parece una odisea.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>11 feb 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../tendencias-musicales-2026/">
+<div class="card__media"><img src="../assets/img/posts/4e37322dd983.png" alt="ilustración de una persona caminando con audífonos rodeada de íconos musicales y un disco de vinilo" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Qué tendencias musicales podríamos esperar este 2026?</h3>
+<p class="card__excerpt">Está bien, llevamos poquito de este año, pero los días pasan volando y, no quiero ser esa persona, pero no nos vamos a dar cuenta cuando ya…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>11 feb 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../banda-sonora-2016/">
+<div class="card__media"><img src="../assets/img/posts/7c59765d80fb.png" alt="ilustración de una habitación juvenil colorida con parlantes, zapatillas y un reloj despertador" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¡Cómo pasa el tiempo! Recordemos la banda sonora del 2016</h3>
+<p class="card__excerpt">Ahora que está tan de moda revivir el 2016, quizás sea buena idea revisar cuáles eran los singles que marcaron ese año, tan nostálgico para…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>11 feb 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../ia-olvido/">
+<div class="card__media"><img src="../assets/img/posts/e2f896fcfaaf.png" alt="hombre mayor con visor de realidad virtual y bastón caminando entre plantas y pantallas con mapas" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">La IA sabe que se te va a olvidar</h3>
+<p class="card__excerpt">Hay un momento en el que una persona se da cuenta de que la inteligencia artificial ya no es solo “tecnología”: cuando te salva de algo que…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>11 feb 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../chips-cerebrales/">
+<div class="card__media"><img src="../assets/img/posts/250ac8d87008.png" alt="cerebro 3D blanco integrado a un chip de circuito electrónico azul translúcido" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Chips cerebrales: suena extremo, pero no tanto</h3>
+<p class="card__excerpt">Durante años, la tecnología fue algo que cargábamos en el bolsillo o apoyábamos sobre la mesa: un celular, un reloj, un computador.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>11 feb 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../vuelos-baratos/">
+<div class="card__media"><img src="../assets/img/posts/6fd4b69ab312.png" alt="hombre sentado en una habitación de hotel mirando su celular frente a una ventana con un avión despegando" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">Volar está lejos de tener un precio fijo</h3>
+<p class="card__excerpt">Atrás han quedado los tiempos donde los vuelos se compraban con agencias de turismo. En las últimas décadas y con la modernización de los…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>11 feb 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../festival-vina-2026/">
+<div class="card__media"><img src="../assets/img/posts/4bd0ea6d7ad6.png" alt="escenario iluminado en azul con estatuas y multitud durante un festival nocturno" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Festival de Viña 2026: ¿el mejor cartel de la última década?</h3>
+<p class="card__excerpt">No creo estar tan alejada de la opinión popular (y especializada) cuando digo con toda la confianza del mundo que el cartel que se propuso…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>11 feb 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../compariniverse-origen/">
+<div class="card__media"><img src="../assets/img/posts/e29fa38df3bf.png" alt="dos hombres enfrentados con capas verde y azul junto al título Compariniverse El Origen sobre fondo espacial" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">&quot;Esto es cine&quot;</h3>
+<p class="card__excerpt">Hace aproximadamente 2 meses comenzamos con el cierre de lo que empezó en julio como el “Compariniverse”.</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>20 ene 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../suscripciones-invisibles/">
+<div class="card__media"><img src="../assets/img/posts/0f17eab4168e.png" alt="persona en pijama blanco revisando el celular sentada en un sillón junto a una ventana con luz cálida" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">Suscripciones invisibles: los gastos silenciosos</h3>
+<p class="card__excerpt">Hay un momento que todos vivimos una vez al mes: abrir la app del banco, ves menos plata de la que recordabas y piensas “ya, pero si no…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>19 ene 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../contraseña-biometria/">
+<div class="card__media"><img src="../assets/img/posts/ea4a25748eba.png" alt="rostro de mujer joven enmarcado en un teléfono junto a otros celulares con iconos de pago" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Tu cara es tu contraseña: biometría everywhere</h3>
+<p class="card__excerpt">Hace no tanto tiempo, autorizar una transferencia era una prueba de estrés: recordar la clave, no equivocarte 3 veces, rezar por un SMS que…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>19 ene 2026</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../canciones-modernas/">
+<div class="card__media"><img src="../assets/img/posts/8857707bbc13.png" alt="Productor de música en estudio con consolas, parlantes y visualizadores de ondas sonoras" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Por qué las canciones se volvieron tan cortas?</h3>
+<p class="card__excerpt">¿Te has preguntado por qué estos últimos años las canciones parece que cada vez son más cortas? O quizás no te lo habías preguntado hasta…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>19 ene 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../musica-sin-algoritmo/">
+<div class="card__media"><img src="../assets/img/posts/b49f18335015.png" alt="Tienda de discos con frente rosa y personas explorando colecciones de música y vinilos" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Cómo descubríamos música antes del algoritmo?</h3>
+<p class="card__excerpt">En una era digital cada vez más expansiva, que nos aleja año a año de aquellos tiempos en que escuchar música implicaba más de un artefacto…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>19 ene 2026</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../hipoteca-inversa/">
+<div class="card__media"><img src="../assets/img/posts/eceec2d7ac9c.png" alt="Hombre mayor de espaldas en sofá rojo mirando por ventana hacia paisaje montañoso" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Tener una propiedad es sinónimo de una mejor vejez?</h3>
+<p class="card__excerpt">El término “economía plateada” ha ganado fuerza en los últimos años. Se refiere a toda la economía que rodea al segmento senior, es decir…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>19 ene 2026</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../gen-z-autos/">
+<div class="card__media"><img src="../assets/img/posts/aa9700df253b.png" alt="Joven de espaldas en patinete eléctrico rojo sobre carretera con iconos digitales y ciudad" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">Generación Z: cada vez más lejos del volante</h3>
+<p class="card__excerpt">Si nos remontamos a los años ochenta o noventa, aprender a manejar y sacar licencia de conducir era como un “rito de paso”.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>25 dic 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../2025-pop-girlies/">
+<div class="card__media"><img src="../assets/img/posts/b3ca5c5528e4.png" alt="Mujer joven mirando a cámara entre pantallas iluminadas con fotos, collages y patrones multicolores" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">2025: El año de las pop girlies</h3>
+<p class="card__excerpt">Se nos va (volando) un nuevo año, y las listas y resúmenes musicales se toman todos los portales, incluyéndonos a nosotros.</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>25 dic 2025</span><span class="byline__sep">·</span><span>6 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../boiler-room/">
+<div class="card__media"><img src="../assets/img/posts/f2c34c61c1b6.png" alt="Multitud alrededor de DJ booth con superficie roja fluorescente y patrón digital azul amarillo" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">BOILER ROOM: electrónica del club al living</h3>
+<p class="card__excerpt">Si hay algo que sabemos de la música electrónica, es que muchas de sus escenas comienzan en las sombras, con sets que cuentan con números…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>25 dic 2025</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../retail-nueva-era/">
+<div class="card__media"><img src="../assets/img/posts/44736bcb36fb.png" alt="Mujer de perfil con cabello azul junto a máquinas retro con patrones coloridos en fondo texturizado" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Cuando la tienda piensa por ti</h3>
+<p class="card__excerpt">¿Te has dado cuenta de que últimamente todo lo que veíamos en las series futuristas empieza a hacerse realidad?</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>25 dic 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../caso-newjeans/">
+<div class="card__media"><img src="../assets/img/posts/e5a0ded69ff9.png" alt="Cuatro mujeres jóvenes posando bajo edificio moderno con iluminación dorada de atardecer" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">EL CASO NEWJEANS: el síntoma de una industria problemática</h3>
+<p class="card__excerpt">Uno de los nombres en la industria del k-pop que salió del nicho y que llegó a los portales musicales de todo el mundo, fue el de NewJeans…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>25 dic 2025</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../premios-crea/">
+<div class="card__media"><img src="../assets/img/posts/c8a9d0854ea9.png" alt="Grupo de doce personas sonriendo en escenario con fondo verde, azul y logos corporativos iluminados." loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">El día que ganamos dos premios (pero solo uno era el que queríamos)</h3>
+<p class="card__excerpt">Hace unos meses lanzamos Compariniverse: la primera campaña en Chile protagonizada por una celebridad completamente clonada con IA.</p>
+<div class="byline"><span class="byline__name">Javier Arriola</span><span class="byline__sep">·</span><span>11 dic 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../autos-electricos-2/">
+<div class="card__media"><img src="../assets/img/posts/20252341ff94.png" alt="Ciudad futurista con edificios vidriados neon, vehículos rosados en agua, cielo gradiente rosa-azul." loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">En Chile, ¿estamos listos para enchufarnos?</h3>
+<p class="card__excerpt">En los últimos meses, pareciera que Chile se está preparando para “enchufarse”. Las calles se están llenando poco a poco de autos…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>01 dic 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../tinder-ia/">
+<div class="card__media"><img src="../assets/img/posts/7b2b93c8710b.png" alt="Dos personajes 3D con cabello azul oscuro sonriendo, rodeados de iconos rosa-púrpura." loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Tu nueva pareja podría ser con IA</h3>
+<p class="card__excerpt">Parece ser que la inteligencia artificial está dominando todo en nuestras vidas. Es tan simple como escuchar música en Spotify y ver cómo…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>01 dic 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../autos-ia/">
+<div class="card__media"><img src="../assets/img/posts/984d9c5353c9.png" alt="Dos personas en auto de noche con dashboard azul y líneas holográficas sobre parabrisas" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Cuando tu auto te responde</h3>
+<p class="card__excerpt">Hasta ahora el copiloto es tu amigo o familiar que te grita “¡dobla a la derecha ahora!”, mientras ve alguna app de movilidad.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>14 nov 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../mtv-music/">
+<div class="card__media"><img src="../assets/img/posts/918d4ed80b7e.png" alt="Televisor retro rojo con logo MTV amarillo rodeado de graffiti neón rosa y lluvia digital" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">MTV: cuando la TV armaba las playlists</h3>
+<p class="card__excerpt">Después de ser el canal más renombrado si de vídeos musicales se trata, una vitrina para nuevos y antiguos talentos, además de moldear los…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>14 nov 2025</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../hiperrealidad-sora/">
+<div class="card__media"><img src="../assets/img/posts/01b9c982e333.png" alt="Grupo de personas en playa surreal con ciudad al fondo, lunas verdes y tonos rosa-verde" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Bienvenido a la hiperrealidad con Sora</h3>
+<p class="card__excerpt">Seguro lo viste hace algunas semanas. La empresa OpenAI, creadora de ChatGPT, lanzó un generador de video tan bueno que asusta.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>14 nov 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../rosalia-lux/">
+<div class="card__media"><img src="../assets/img/posts/5f7c78acf760.png" alt="Mujer de perfil en atuendo blanco con velo, flores rosas al frente, fondo multicolor vintage" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Rosalía y LUX: del dolor a la performance</h3>
+<p class="card__excerpt">Rosalía, la camaleónica cantante española que se ha hecho conocida por sus peculiares arreglos en su música y en su forma de cantar…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>14 nov 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../humanos-ia/">
+<div class="card__media"><img src="../assets/img/posts/e553de7f0ef9.png" alt="Dos manos en suéteres tejidos que se tocan, fondo nocturno oscuro con luces bokeh rosas y doradas" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Entre humanos e IA: la dupla que está reescribiendo el trabajo</h3>
+<p class="card__excerpt">Hasta hace poco, el trabajo “de oficina” era sinónimo de tareas repetitivas: cargar correos, responder mensajes, clasificar leads o revisar…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>14 nov 2025</span><span class="byline__sep">·</span><span>1 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../post-dario/">
+<div class="card__media"><img src="../assets/img/posts/8e3bd685cbcc.png" alt="Niño con ambas manos extendidas liberando partículas brillantes en tonos dorados, azules y rosas hacia adelante" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">De CM a realizador audiovisual con IA</h3>
+<p class="card__excerpt">Si es la primera vez que lees un post de El Comparador, te contamos algo antes de que sigas tu lectura.</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>29 oct 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../post-pauli/">
+<div class="card__media"><img src="../assets/img/posts/56b9f77de189.png" alt="Mujer con gafas de realidad virtual entre servidores negros iluminados con luces amarillas" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">La reina de las automatizaciones</h3>
+<p class="card__excerpt">En el camino de la IA y el trabajo, hace tiempo que queremos mostrar cómo se ha transformado el trabajo en Compara.</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>22 oct 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../airpods-y-traduccion/">
+<div class="card__media"><img src="../assets/img/posts/6ce5d7baf299.png" alt="Perfil de dos personas conectadas por rayo de luz pixelado atravesando sus cabezas" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">El futuro de las comunicaciones ha llegado.</h3>
+<p class="card__excerpt">Con el lanzamiento de las novedades de Apple hace algunas semanas, vino también un anuncio que no pasó tan desapercibido: los Airpods ahora…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>22 oct 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../libros-y-musica/">
+<div class="card__media"><img src="../assets/img/posts/534effed54bf.png" alt="Biblioteca de lujo con estantes de libros, tocadiscos, sofá rojo y lámparas doradas encendidas" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Los libros que no sabías que necesitabas</h3>
+<p class="card__excerpt">En esta publicación colisionan dos mundos que, muchas veces, se guiñan los ojos, pero que caminan de forma paralela.</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>22 oct 2025</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../cyberseguridad/">
+<div class="card__media"><img src="../assets/img/posts/262045d296c5.png" alt="Teléfono inteligente rosa con aplicaciones coloridas rodeado de figuras negras en mapa azul cuadriculado" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">No era tu banco, ni tu paquete, ni tu ex</h3>
+<p class="card__excerpt">El 2025 quedará en el historial: los ataques con mensajes falsos se dispararon en un 71% en Chile. WhatsApp, correos, mensajes de texto……</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>22 oct 2025</span><span class="byline__sep">·</span><span>1 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../superbowl-bad-bunny/">
+<div class="card__media"><img src="../assets/img/posts/14c9ac40f350.png" alt="Hombre en chaqueta a rayas levantando brazos en celebración frente a escenario con fuegos artificiales" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Preparándote para el show del Super Bowl?</h3>
+<p class="card__excerpt">Hace unos días se informó con un par de vídeos oficiales que el puertorriqueño Bad Bunny será el protagonista del show de medio tiempo del…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>08 oct 2025</span><span class="byline__sep">·</span><span>7 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../dilema-autos-electricos/">
+<div class="card__media"><img src="../assets/img/posts/900b54ee68cc.png" alt="Ilustración: dos autos deportivos verdes y coloridos totalmente cubiertos de plantas y flores" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">El dilema de los autos eléctricos</h3>
+<p class="card__excerpt">Mucho se ha hablado de los autos eléctricos en los últimos años. El bajo nivel de emisiones en un contexto de calentamiento global…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>08 oct 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../iphone-ia/">
+<div class="card__media"><img src="../assets/img/posts/1617b99e73ce.png" alt="Pantalla de teléfono gigante en centro de taller profesional con relámpagos morados, logo Apple en pantalla" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Nueva generación Iphone: IA + salud</h3>
+<p class="card__excerpt">Como cada septiembre, los fanáticos de Apple se alistan para los nuevos lanzamientos. El día llegó el pasado martes 9 de septiembre en el…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>08 oct 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../guia-para-ia/">
+<div class="card__media"><img src="../assets/img/posts/2a06f867eb88.png" alt="Tres personas en ropa de colores cálidos rodeadas de robots dorados y símbolos de neón azul flotantes en fondo oscuro" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Una guía para navegar el universo IA</h3>
+<p class="card__excerpt">Desde que salió la inteligencia artificial, es como que todo el mundo hablara de ella: qué tipo de cosas necesitas aprender de IA para el…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>03 sep 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../basta-notificaciones/">
+<div class="card__media"><img src="../assets/img/posts/d6b235ac1928.png" alt="Habitación decorada en tonos rosa con iconos de notificaciones, burbujas de chat, electrodomésticos y plantas dispersos en todas las superficies, ilustración de grabado." loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Ya basta de notificaciones</h3>
+<p class="card__excerpt">Spotify ya nos notificaba sobre lanzamientos, playlists, conciertos y podcast que “seguro te gustarán”.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>03 sep 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../guarda-tu-shazam/">
+<div class="card__media"><img src="../assets/img/posts/bd6bb27e7c48.png" alt="Mano con pulseras toca discos de vinilo apilados, con ciudad desenfocada de fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Guarda tu Shazam</h3>
+<p class="card__excerpt">Si hay algo que podemos sacar en limpio sobre los vídeos de TikTok o los reels de Instagram, es que siempre nos van a entregar canciones o…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>03 sep 2025</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../los-reyes-ia/">
+<div class="card__media"><img src="../assets/img/posts/46101e2599d2.png" alt="Figuras estilizadas de reyes y gobernantes en verde pátina y oro, de distintos tamaños, sobre fondo verde azulado con nubes rosas" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Los reyes de la IA</h3>
+<p class="card__excerpt">Basta un pequeño “scrolleo” en LinkedIn para encontrarlos. Son la nueva sensación del mundo laboral: los Chief AI Officer, o en español…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>03 sep 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../millenials-y-compromiso/">
+<div class="card__media"><img src="../assets/img/posts/b523b3a8dab1.png" alt="Anillo de diamante en manos de novia rodeada de amigas en ropa verde sobre alfombra ornamentada con patrones dorados" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Los millennials y el compromiso inesperado</h3>
+<p class="card__excerpt">Selena Gómez, Dua Lipa y Taylor Swift dijeron “sí” este 2025. Y aunque sus anillos brillan en Instagram, para nuestra generación el…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>03 sep 2025</span><span class="byline__sep">·</span><span>1 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../konichiwa-latam/">
+<div class="card__media"><img src="../assets/img/posts/ac654180d5f5.png" alt="Banda tocando en escenario de teatro asiático ornamentado con audiencia en primer plano" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Konichiwa Latinoamérica!</h3>
+<p class="card__excerpt">Latinoamérica en un territorio con vasto conocimiento si hablamos de lo que Japón tiene para ofrecer.</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>03 sep 2025</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../reclutamiento-ia/">
+<div class="card__media"><img src="../assets/img/posts/89b420063cc7.png" alt="Rostro de persona con efecto de pixelización digital en tonos verde y turquesa sobre fondo oscuro con datos fragmentados" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Ser seleccionado por una IA?</h3>
+<p class="card__excerpt">En este nuevo mundo distópico en el que nos hemos sumergido hace relativamente poco, no sabemos lo que es real o lo que no.</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>29 ago 2025</span><span class="byline__sep">·</span><span>6 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../documentales-musica/">
+<div class="card__media"><img src="../assets/img/posts/17961d114f8e.png" alt="Grupo de personas sentadas dentro de una autocaravana amarilla rodeada de bosque oscuro, comiendo pop corn alrededor de una fogata, con guitarra y equipo de audio" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¡Prepara las cabritas!</h3>
+<p class="card__excerpt">No somos pocos los que disfrutamos de un buen documental en la comodidad de nuestros hogares, pero cuánto mejor si estos proyectos tratan…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>19 ago 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../compara-vs-amazon/">
+<div class="card__media"><img src="../assets/img/posts/4eafeffc7449.png" alt="Hombre ilustrado en primer plano rodeado de un grupo diverso de personas con diferentes profesiones y estilos, contra un fondo nocturno con estrellas" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Ya puedes crear tu propia serie gracias a la IA</h3>
+<p class="card__excerpt">¿Y si te dijera que podrías crear tu propia serie animada en minutos, sin saber dibujar, escribir guiones ni editar videos?</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>14 ago 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../oasis-manchester/">
+<div class="card__media"><img src="../assets/img/posts/4bf3a7a0d722.png" alt="Fachada británica con cabina telefónica roja, puerta turquesa, ventanas con vidrios, macetas con plantas, banco de madera y dos guitarras apoyadas en la pared amarilla" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">El City de OASIS</h3>
+<p class="card__excerpt">Llegó el momento de celebrar para los amantes de los cuatro acordes, de aquellos que aprendieron a tocar la guitarra con “Wonderwall” y de…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>14 ago 2025</span><span class="byline__sep">·</span><span>6 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../glosario-pop/">
+<div class="card__media"><img src="../assets/img/posts/f43281d061f5.png" alt="Ilustración isométrica de una plaza urbana con edificios neoclásicos, personas paseando, automóviles antiguos y árboles en tonos ocre y azul grisáceo" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Crecimos muy rápido o los jóvenes hablan otro idoma?</h3>
+<p class="card__excerpt">Sabemos que puede ser complicado mantenerte enterado de cada palabra, frase o jerga que se estila entre los más jóvenes en redes sociales…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>06 ago 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../de-levis-a-shein/">
+<div class="card__media"><img src="../assets/img/posts/c76d4d9662a5.png" alt="Grupo de jóvenes sonriendo en una tienda, sosteniendo bolsas de compra de colores variados" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">De Levi&#x27;s a SHEIN</h3>
+<p class="card__excerpt">¿Se acuerdan de la época en que todo lo estadounidense era mejor? En los 70s o 80s, al menos en Chile, la gente se peleaba por quién tenía…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>06 ago 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../tati-post-ia/">
+<div class="card__media"><img src="../assets/img/posts/a973af00fd01.png" alt="Mujer con gafas en chaqueta blanca rodeada de rascacielos holográficos y símbolos de código en un entorno digital azul cian" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">El talento que construye el futuro de Compara</h3>
+<p class="card__excerpt">Si hace unos años nos hubieran preguntado qué era lo más importante a la hora de contratar, probablemente habríamos hablado de experiencia…</p>
+<div class="byline"><span class="byline__name">Tatiana Trout</span><span class="byline__sep">·</span><span>25 jul 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../coffee-party/">
+<div class="card__media"><img src="../assets/img/posts/bd5a616b1ad3.png" alt="Cafetera moka roja con figuras miniatura de personas en ropa vintage blanca, tocadiscos y elementos decorativos rosa en composición surrealista" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">La fiesta ya no termina a las 4 de la mañana</h3>
+<p class="card__excerpt">Todo cambia, ¿cierto? Las formas de trabajar, las maneras de consumir contenido y también de entretenerse.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>25 jul 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../ia-antes-de-gpt/">
+<div class="card__media"><img src="../assets/img/posts/9ea50abf1060.png" alt="Robot retro con cabeza cerámica blanca manchada en tonos óxido, auriculares dorados y cuerpo amarillo, sentado en playa con maleta vintage junto a flores rosadas y arquitectura histórica al fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">La IA ya vivía contigo antes de ChatGPT</h3>
+<p class="card__excerpt">Mucho antes de hablarle a un chatbot, ya convivías con la IA todos los días. Desde que irrumpió ChatGPT, pareciera que la inteligencia…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>09 jul 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../banda-sonora-2025/">
+<div class="card__media"><img src="../assets/img/posts/2ccc0e57e8b0.png" alt="Perfil de cabeza con auriculares azules y líneas de grabado sobre fondo de partitura manuscrita" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Cuál será la banda sonora de tu 2025?</h3>
+<p class="card__excerpt">El 2025 se ha pasado volando. Ya vamos por la mitad del año y no podemos negar que estos meses se nos fueron como un guiño.</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>09 jul 2025</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../taylors-version/">
+<div class="card__media"><img src="../assets/img/posts/d6e5ae806e8c.png" alt="Mujer de perfil con cabello rubio largo mirando hacia el horizonte, vistiendo chaqueta gris verde oscuro, con fondo desenfocado en tonos cálidos" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Taylor&#x27;s version: una mirada al triunfo de Taylor Swift</h3>
+<p class="card__excerpt">Muchos conocen a la cantautora norteamericana Taylor Swift, pero no todos saben que la artista se encontró en una batalla legal tremenda…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>09 jul 2025</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../renuncia-silenciosa/">
+<div class="card__media"><img src="../assets/img/posts/80b7dc2e4186.png" alt="Persona con auriculares mirando hacia arriba, colegas detrás, fondo en colores degradados" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Trabajo, pero a que costo</h3>
+<p class="card__excerpt">A medida que la Generación Z va entrando al mundo laboral, han empezado a aparecer nuevos conceptos en torno al trabajo.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>02 jul 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../estoicismo-reloaded/">
+<div class="card__media"><img src="../assets/img/posts/a6cd38df6ffc.png" alt="Tres bustos clásicos azules y blancos, uno con anteojos, frente a arquitectura greco-romana y fondo amarillo" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Estoicismo reloaded</h3>
+<p class="card__excerpt">Si nos adentramos en el mundo de las creencias en TikTok, aparecen todo tipo de corrientes. Gente que cree que todo lo que pasa en la vida…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>18 jun 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../meta-ia-creativos/">
+<div class="card__media"><img src="../assets/img/posts/fdbe6a60a3be.png" alt="Cabeza artificial con superficie tejida multicolor (blanco, verde y púrpura), boca abierta mostrando interior con tejido rosa y dientes puntiagudos" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Meta IA nos va a jubilar a los creativos?</h3>
+<p class="card__excerpt">Luego de que Mark Zuckerberg presentara su nueva propuesta de inteligencia artificial para revolucionar la publicidad online, en las…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>04 jun 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../actualizacion-ios-android/">
+<div class="card__media"><img src="../assets/img/posts/b5debe519633.png" alt="Grupo diverso de personas sosteniendo smartphones y laptops con fondo azul y elementos decorativos en naranja y amarillo" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Qué tienen en común cantar mal, salir en una foto y programar un mensaje?</h3>
+<p class="card__excerpt">¿Tienes un iPhone o un Android? Entonces seguro estás familiarizado con esas notificaciones que te avisan de una nueva actualización del…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>04 jun 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../guaguas-vs-perrhijos/">
+<div class="card__media"><img src="../assets/img/posts/3aca80a2a9f7.png" alt="Hombre empujando cochecito con perro entre edificios urbanos mientras sonríe, acompañado por pareja feliz" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Menos guaguas, más perrhijos</h3>
+<p class="card__excerpt">Hace unas décadas, lo normal era que tus papás a los 30 ya tuvieran dos hijos, una casa propia y hasta planes para un tercero.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>28 may 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../entreteniminto-selfies/">
+<div class="card__media"><img src="../assets/img/posts/44c05d03f26b.png" alt="Grupo de personas diversas sosteniendo smartphones mientras se toman selfies en fondo de colores vibrantes" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">La nueva era del entretenimiento sin selfies</h3>
+<p class="card__excerpt">Todos lo hemos vivido. Últimamente, ir a un concierto ya no se trata solo de esquivar cabezas de personas más altas que nosotros.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>23 may 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../tiny-desk/">
+<div class="card__media"><img src="../assets/img/posts/064f0759979e.png" alt="Escritorio de estudio con estanterías de madera repletas de libros, discos de vinilo y objetos decorativos, teclado musical y computadora, con logo de NPR en la esquina superior" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Tiny Desk: de humilde propuesta a fenómeno de internet</h3>
+<p class="card__excerpt">Si YouTube es uno de tus mejores amigos y además te consideras un melómano empedernido, no me sorprendería que conozcas el espacio Tiny…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>15 may 2025</span><span class="byline__sep">·</span><span>5 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../relaciones-humanas-ia/">
+<div class="card__media"><img src="../assets/img/posts/8870ea61a4ce.jpg" alt="Hombre con lentes frente a pantalla de computadora que muestra ícono de IA, sentado en escritorio nocturno con vista a ciudad desenfocada de fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Relaciones humanas en tiempos de IA</h3>
+<p class="card__excerpt">Hoy muchos conversan con inteligencias artificiales como Chat Gpt como si fueran personas: les cuentan sus penas, les piden consejos, y…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>15 may 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../obsolescencia-programada/">
+<div class="card__media"><img src="../assets/img/posts/9e58b0eaa250.jpg" alt="Ilustración surrealista de una playa con reloj derretido en rama, personas difuminadas caminando, y prendas de ropa dispersas en la arena" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Obsolescencia programada</h3>
+<p class="card__excerpt">Últimamente, hemos visto como las diferentes casas de moda mundialmente reconocidas han pasado por transiciones.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>07 may 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../iglesia-ia/">
+<div class="card__media"><img src="../assets/img/posts/67c971becac9.jpg" alt="Sacerdote en iglesia azul contempla holograma luminoso de cerebro digital, junto a crucifijo, vitrales brillantes y robot" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">La Iglesia Católica y la Inteligencia Artificial</h3>
+<p class="card__excerpt">¿Un Jesús holográfico dando consejos en una iglesia suiza? No es ciencia ficción: pasó de verdad. Y este caso refleja algo mucho más…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>07 may 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../bad-bunny/">
+<div class="card__media"><img src="../assets/img/posts/0767924e5f92.png" alt="Renderizado 3D de personaje con piel cálida, sombrero panamá beige, barba negra, suéter rojo con patrón geométrico, sosteniendo mariposa roja, cielo azul con nubes blancas de fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Bad Bunny y su oda a Puerto Rico</h3>
+<p class="card__excerpt">Del discurso a la música, Bad Bunny se ha vuelto en un referente de la cultura puertorriqueña pero no solo desde su innegable popularidad…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>30 abr 2025</span><span class="byline__sep">·</span><span>6 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../doechii/">
+<div class="card__media"><img src="../assets/img/posts/4e9ea3b2b6be.png" alt="Ilustración estilizada de mujer joven con piel dorada, gafas azules, trenzas largas adornadas con cuentas, pendientes circulares, fondo azul con nubes turquesas" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">DOECHII, la imparable rapera del momento</h3>
+<p class="card__excerpt">Si en redes sociales no has escuchado esta canción, o no te suena esta, definitivamente, tienes que haberte topado con este single en algún…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>23 abr 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../gen-z-trabajo/">
+<div class="card__media"><img src="../assets/img/posts/58ab305fb58e.jpg" alt="Fotografía de tres jóvenes sonriendo frente a collage con billetes de pesos chilenos, texto impreso y símbolos de dinero" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Generación Z en el trabajo</h3>
+<p class="card__excerpt">Hasta hace poco, imaginábamos a la Generación Z, es decir, los nacidos entre 1997 a 2012, como adolescentes colegiales.</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>23 abr 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../futurama-robots/">
+<div class="card__media"><img src="../assets/img/posts/a9989dc8044d.jpg" alt="Ilustración estilizada de robot gris metálico con ojos amarillos y sonrisa, cocinando en cocina con azulejos amarillos, delantal verde y blanco, sosteniendo espátula sobre sartén con vapor" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Bender de Futurama en tu casa</h3>
+<p class="card__excerpt">¿Te acuerdas de Bender de “Futurama”? Ese robot chistoso que siempre andaba metido en alguna aventura loca.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>16 abr 2025</span><span class="byline__sep">·</span><span>1 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../ia-futbol/">
+<div class="card__media"><img src="../assets/img/posts/7edffff000ce.jpg" alt="Vista aérea de campo de fútbol con jugadores en uniforme magenta y blanco posicionados en círculos interconectados por líneas de juego, porcentajes y gráficos de barras en turquesa superpuestos sobre el pasto verde" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">La IA llegó al fútbol</h3>
+<p class="card__excerpt">La tecnología está revolucionando -nuevamente- el fútbol profesional de una manera que ni los más grandes futbolistas podrían haber…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>16 abr 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../kidd-voodoo/">
+<div class="card__media"><img src="../assets/img/posts/29c7e00d8963.jpg" alt="Persona joven con pelo platinado corto, collar metálico, audífonos alrededor del cuello, sosteniendo dos botellas, sonriendo ampliamente, fondo negro con destellos de luz" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Kidd Voodoo y los siete Movistar Arena</h3>
+<p class="card__excerpt">23 años. Solo 23 años tiene el artista chileno urbano del momento que logró, de manera histórica, convertirse en el primer artista nacional…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>08 abr 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../match-autos-electricos/">
+<div class="card__media"><img src="../assets/img/posts/778cacf1b29c.jpg" alt="Vista aérea renderizada en 3D de estacionamiento con autos en grises, blancos y negros, auto naranja destacado, símbolos de carga eléctrica en espacios de estacionamiento, postes de luz y árboles verdes" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Hay match entre Chile y los autos eléctricos?</h3>
+<p class="card__excerpt">Hace un tiempo que se habla de los nuevos autos eléctricos: cómo contaminan menos, gastan menos energía y marcan el camino hacia un futuro…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>08 abr 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../ia-problemas/">
+<div class="card__media"><img src="../assets/img/posts/a621d21e4253.jpg" alt="Renderizado digital de persona de edad avanzada con gafas de sol redondas, gorro blanco, abrigo acolchado blanco, crucifijo y gesto de paz con ambas manos sobre fondo negro" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Para bien o para mal</h3>
+<p class="card__excerpt">La inteligencia artificial (o IA) ha revolucionado nuestras vidas en los últimos años. Desde buscar respuestas y obtener información hasta…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>04 abr 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../comparini-compara-3/">
+<div class="card__media"><img src="../assets/img/posts/eb8343b1dda9.jpg" alt="1743435264035_c_(02)" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Comparini vuelve en forma de fichas</h3>
+<p class="card__excerpt">Cuando el team de Compara nos trajo el brief para la nueva campaña, lo primero que nos preguntamos fue: ¿Qué hacemos con Comparini?</p>
+<div class="byline"><span class="byline__name">Pame Pfeng - Directora Creativa RAYA</span><span class="byline__sep">·</span><span>26 mar 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../kpop-chile/">
+<div class="card__media"><img src="../assets/img/posts/185e585a59ee.jpg" alt="Collage de idols K-pop con múltiples jóvenes en trajes blancos y ropa roja, con peinados de colores variados, sobre fondo de tonos pastel rosa, púrpura y verde con elementos gráficos de estrellas amarillas y rectángulos decorativos" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¡Hey k-poper! Agenda estas fechas</h3>
+<p class="card__excerpt">Ya desde mediados del año pasado han comenzado a confirmarse diferentes fechas en Chile que respaldan el éxito del K-pop en el país, el que…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>25 mar 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../tool-mercado/">
+<div class="card__media"><img src="../assets/img/posts/a125067766fe.jpg" alt="Multitud en concierto con camisetas negras de TOOL de espaldas frente a escenario con estructura metálica, pantallas de video y luces naranjas" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">Tool y la economía</h3>
+<p class="card__excerpt">Hace un tiempo, más precisamente noviembre del 2024, se anunció que Tool tocaría en el Movistar Arena.</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>19 mar 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../nostalgia-millenial/">
+<div class="card__media"><img src="../assets/img/posts/1eeb9956f11f.jpg" alt="Ilustración 3D de juguete electrónico Tamagotchi rosado con pantalla que muestra corazón pixelado, sobre fondo azul profundo" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Acaso estamos reviviendo lo mejor de los 90 y 2000?</h3>
+<p class="card__excerpt">Las décadas de los 90 y los 2000 fueron tiempos gloriosos y de pura explosión cultural para nosotros, los millennials.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>19 mar 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../david-bowie-ia/">
+<div class="card__media"><img src="../assets/img/posts/be49c57a8abf.jpg" alt="Renderizado 3D de perfil de cabeza humana iluminada en tonos magenta y rosa brillantes, con elementos florales verdes en la esquina inferior izquierda sobre fondo oscuro con efecto neón" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Bowie pionero en IA</h3>
+<p class="card__excerpt">La mezcla de estilos, el concepto del hombre multi-instrumentalista, las letras poéticas y la performance teatral traen a la cabeza un…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>19 mar 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../benson-teddy-lolla2025/">
+<div class="card__media"><img src="../assets/img/posts/0a07558b95ef.png" alt="Hombre con barba, lentes rojos redondos y chaqueta blanca junto a escena de concierto con músicos iluminados en azul y púrpura frente a pared de focos blancos y naranjas" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Los nuevos nominados al Grammy llegan al Lolla 2025</h3>
+<p class="card__excerpt">Ya han pasado varios meses desde que se anunció el Line up oficial para Lollapalooza Chile 2025 y son varios los nombres que figuran cerca…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>11 mar 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Seguros" class="card" href="../seguro-asteroides/">
+<div class="card__media"><img src="../assets/img/posts/ddabc281b0bb.png" alt="Hombre con gafas de marcos negros y dorados, barba oscura, expresión de sorpresa, vistiendo blazer gris azulado sobre camisa de cuadros blanca, en pasillo comercial con personas desenfocadas al fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Seguros</span></div>
+<div class="card__body">
+<h3 class="card__title">Don’t Look Up en la vida real</h3>
+<p class="card__excerpt">El anuncio del posible impacto del Asteroide 2024 YR4 en la Tierra nos hizo recordar la película Don’t Look Up y analizar ciertos factores…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>11 mar 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../elon-musk-chile/">
+<div class="card__media"><img src="../assets/img/posts/fec639897cb1.jpg" alt="Fotografía nocturna de cielo estrellado con línea de luces blancas brillantes formando trayectoria diagonal, montañas oscuras al fondo y estructura de madera rústica a la derecha" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Qué tienen en común Elon Musk y Chile?</h3>
+<p class="card__excerpt">Leemos y escuchamos mucho del empresario Elon Musk. Su odisea al comprar Twitter y llamarlo X, su empresa Tesla con autos eléctricos, o sus…</p>
+<div class="byline"><span class="byline__name">Magdalena Ovalle</span><span class="byline__sep">·</span><span>06 mar 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../fenomeno-bruno-mars/">
+<div class="card__media"><img src="../assets/img/posts/568de0c66ff6.jpg" alt="Hombre con pelo rizado oscuro y gafas de marco dorado, vistiendo traje amarillo y blanco, sosteniendo teléfono antiguo de botones negros, múltiples anillos y brazaletes dorados, fondo de estudio vintage con tonos cálidos y sepias" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">Cómo ser el N°1 sin lanzar álbumes en 10 años</h3>
+<p class="card__excerpt">Bruno Mars, el reciente ganador de los premios Grammy por su colaboración con Lady Gaga para el hit “Die With A Smile”, cerró un 2024 con…</p>
+<div class="byline"><span class="byline__name">Mariel Vargas</span><span class="byline__sep">·</span><span>28 feb 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Cultura" class="card" href="../festival-viña-02/">
+<div class="card__media"><img src="../assets/img/posts/886dc80a3909.jpg" alt="Fotografía aérea nocturna de escenario con logo VIÑA25 iluminado en blanco, rodeado de barras de luz púrpura y azul con efectos visuales de iluminación" loading="lazy"><span class="tag tag--sm tag--on-photo">Cultura</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Sigue siendo tema el Festival de Viña?</h3>
+<p class="card__excerpt">Si hay algo que a los chilenos nos une en febrero, además del calor infernal y las vacaciones, es el Festival de Viña.</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>28 feb 2025</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../china-universidad-robots/">
+<div class="card__media"><img src="../assets/img/posts/55d4c6e32bff.jpg" alt="Ilustración estilizada de personaje amarillo junto a robot blanco etiquetado D39 en línea de producción de fábrica futurista con paneles de control en tonos azules, turquesas y naranjas" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Una universidad solo para robots</h3>
+<p class="card__excerpt">Seguro has escuchado más de una vez la frase: “Los robots dominarán el mundo”. Y aunque no sabemos realmente qué nos depara el futuro, lo…</p>
+<div class="byline"><span class="byline__name">Sofía Portilla</span><span class="byline__sep">·</span><span>21 feb 2025</span><span class="byline__sep">·</span><span>1 min</span></div>
+</div>
+</a>
+<a data-cat="Seguros" class="card" href="../festival-viña-01/">
+<div class="card__media"><img src="../assets/img/posts/87bb683f7a0d.jpg" alt="Hombre joven sonriendo con gorro marrón y chaqueta roja, sosteniendo micrófono en concierto y trofeo en su mano, con rosa roja y fondo azul púrpura" loading="lazy"><span class="tag tag--sm tag--on-photo">Seguros</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Seguro para gaviotas de plata?</h3>
+<p class="card__excerpt">Podemos decir que el Festival de Viña es un evento que nos marca que estamos en verano, que cuando lo veamos seguro estamos tomando unas…</p>
+<div class="byline"><span class="byline__name">Anfiteatro &quot;Quinta Vergara&quot;, Viña del Mar</span><span class="byline__sep">·</span><span>21 feb 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../brasil-y-la-devaluacion/">
+<div class="card__media"><img src="../assets/img/posts/a9e9eb9f15c4.jpg" alt="Fotografía de playa con aguas turquesas y olas blancas, bañistas dispersos en el agua y la arena, edificios y construcciones en la costa, montañas arboladas de fondo y cielo nublado en tonos azules" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">La devaluación en Brasil, ¿oportunidad o alerta?</h3>
+<p class="card__excerpt">Vamos a hablar de un tema que parece “fome” y capaz, muy elevado en ciertos ámbitos, pero que a decir verdad es algo que transitamos a lo…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>26 ene 2025</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../podcast-compara/">
+<div class="card__media"><img src="../assets/img/posts/f1181cafb006.jpg" alt="Fotografía de estudio de podcast con hombre de gafas en chaqueta verde oscura frente a consola de audio profesional negra, pantalla de monitoreo, letreros de neón luminoso y luces azul púrpura de ambiente" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Compara y la música</h3>
+<p class="card__excerpt">Este año para nosotros fue el equivalente a un año perruno (es decir, 7 humanos). Vivimos tantas cosas que sentimos que pasó mucho tiempo.</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>02 ene 2025</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../andre-practicante-pm/">
+<div class="card__media"><img src="../assets/img/posts/ce3d84ec8088.jpeg" alt="Fotografía de grupo de nueve personas sonriendo en oficina moderna con ventanales de fondo mostrando vista de la ciudad, vistiendo ropa casual en colores negro, azul, amarillo, gris y rosa" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Todo empezó con unas prácticas</h3>
+<p class="card__excerpt">¿Sabían que en Compara un 63% de las personas que trabajan son mujeres? Una de ellas es Andrea Trujillo, Ingeniera Comercial y actualmente…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>19 dic 2024</span><span class="byline__sep">·</span><span>1 min</span></div>
+</div>
+</a>
+<a data-cat="Finanzas" class="card" href="../paulo-mercado-brasil/">
+<div class="card__media"><img src="../assets/img/posts/b135e19fd219.avif" alt="Fotografía de calle urbana congestionada con taxis amarillos, autos blancos y grises, motociclistas en trajes oscuros circulando entre vehículos bajo luz solar" loading="lazy"><span class="tag tag--sm tag--on-photo">Finanzas</span></div>
+<div class="card__body">
+<h3 class="card__title">No voy en auto, voy en moto</h3>
+<p class="card__excerpt">El 2024 trajo muchas cosas nuevas, en Brasil un cambio histórico en la forma de movilizarse. Cada país tiene su medio de transporte…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>16 dic 2024</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../bruno-scorecards-startups/">
+<div class="card__media"><img src="../assets/img/posts/5c3c0726c55f.jpg" alt="Grupo de empleados reunidos alrededor de mesas de madera en sala moderna durante evento corporativo, con cadenas colgantes de medallas doradas plateadas al fondo y pantalla azul proyectada mostrando presentación" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Trabajo con Scorecards y Startups</h3>
+<p class="card__excerpt">¿Cómo trabajan las Startups? Seguramente no hay una sola forma, pero si podemos contarte como lo hace Compara.</p>
+<div class="byline"><span class="byline__name">Bruno (a la izquierda) con parte del equipo de Marketing en un Co-Work.</span><span class="byline__sep">·</span><span>28 nov 2024</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../tati-trabajo-remoto/">
+<div class="card__media"><img src="../assets/img/posts/a0bf729ea420.jpg" alt="Profesional en escritorio con dos pantallas, laptop mostrando sitio web y monitor con código de programación" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Una mirada al Trabajo Remoto desde HR</h3>
+<p class="card__excerpt">¿Se han preguntado alguna vez cuál es la diferencia de solo ser beneficiario al de ser parte de la generación de esos beneficios?</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>28 nov 2024</span><span class="byline__sep">·</span><span>1 min</span></div>
+</div>
+</a>
+<a data-cat="Seguros" class="card" href="../seguro-autos-electricos/">
+<div class="card__media"><img src="../assets/img/posts/a4d01be3e02b.jpg" alt="Ilustración retro-futurista con familia en nave espacial roja y ciudad futurista con torres y platillos voladores sobre fondo azul" loading="lazy"><span class="tag tag--sm tag--on-photo">Seguros</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Alguien dijo Supersónicos?</h3>
+<p class="card__excerpt">El crecimiento de los autos eléctricos está siendo cada vez mayor, ya no nos sorprende ver estaciones de carga para estos, ni que algún…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>28 nov 2024</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../dario-llega-compara/">
+<div class="card__media"><img src="../assets/img/posts/236f889272c3.png" alt="Tres jóvenes sonriendo en una azotea con plantas verdes y barandales metálicos al fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">De una Agencia a una Startup</h3>
+<p class="card__excerpt">Imagínense la película Caza Fantasmas, pero en vez de cazar estos cuerpos etéreos, lo hacemos con talentos.</p>
+<div class="byline"><span class="byline__name">Dario (al centro, arriba de Comparini) y parte del equipo en el set de C13.</span><span class="byline__sep">·</span><span>28 nov 2024</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../humanizacion-marcas-consiglieri/">
+<div class="card__media"><img src="../assets/img/posts/a66bf3fb4b3c.png" alt="Hombre mayor con gafas y joven en asiento frontal de auto azul, paisaje urbano desenfocado al fondo" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Comparini, Colapinto y la Humanización de las Marcas</h3>
+<p class="card__excerpt">A esta altura del partido, para nadie es un secreto que el concepto de marca ha evolucionado. En un entorno empresarial dinámico, líquido y…</p>
+<div class="byline"><span class="byline__name">Claudio Ramírez</span><span class="byline__sep">·</span><span>05 nov 2024</span><span class="byline__sep">·</span><span>9 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../afertmath-comparini/">
+<div class="card__media"><img src="../assets/img/posts/bb97d68fb417.png" alt="Captura de pantalla 2024-10-29 a la(s) 5.28.44 p. m." loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">¿Habrá segunda parte?</h3>
+<p class="card__excerpt">Comparini-Compara está presente en todas partes, creíamos que iba a ser así, pero verlo materializado nos hizo creer aún más que lo que…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>05 nov 2024</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../agi-alejandro-silberstein/">
+<div class="card__media"><img src="../assets/img/posts/913669603302.jpg" alt="Hombre con gafas verdes y audífonos hablando en micrófono profesional dentro de estudio de grabación acústico" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Cuando los Algoritmos Deciden: El Futuro de la Publicidad</h3>
+<p class="card__excerpt">La publicidad, la creatividad y el marketing están en constante evolución, y como socio de Raya, he sido testigo de cómo la tecnología ha…</p>
+<div class="byline"><span class="byline__name">Alejandro Silberstein</span><span class="byline__sep">·</span><span>15 oct 2024</span><span class="byline__sep">·</span><span>4 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../comparini-compara/">
+<div class="card__media"><img src="../assets/img/posts/59710307e647.png" alt="Grupo diverso de cinco adultos con gafas sonriendo sobre fondo azul, uno sostiene cajas de envío" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Comparini Compara, marca registrada</h3>
+<p class="card__excerpt">¿Cómo surge?, ¿qué hay detrás de esto?, ¿de quién fue la idea? ¿Comparini puede ser mi tío? Todas estas preguntas tienen su respuesta a…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>01 oct 2024</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Tecnología" class="card" href="../ley-proteccion-datos/">
+<div class="card__media"><img src="../assets/img/posts/bb5d4a610ea6.jpg" alt="Candado de neón azul fluorescente rodeado de circuitos electrónicos y código binario en fondo oscuro" loading="lazy"><span class="tag tag--sm tag--on-photo">Tecnología</span></div>
+<div class="card__body">
+<h3 class="card__title">Mis datos, ¿dónde van mis datos?</h3>
+<p class="card__excerpt">En esta era de las apps y cookies, le damos aceptar a todo, confiando que no van a usar nuestros datos de manera irresponsable.</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>26 sep 2024</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../ganar-un-effie/">
+<div class="card__media"><img src="../assets/img/posts/485d3d0953f9.jpg" alt="Equipo BRAND COMPARA_c" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Salir a la calle y de paso ganar un Effie</h3>
+<p class="card__excerpt">A veces, en el mundo del marketing, llegas a un punto donde, por mucho que todo esté funcionando bien, sientes que algo falta.</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>26 sep 2024</span><span class="byline__sep">·</span><span>3 min</span></div>
+</div>
+</a>
+<a data-cat="Seguros" class="card" href="../insurtech-ia-generativa/">
+<div class="card__media"><img src="../assets/img/posts/9988592b3da6.jpg" alt="Mano robótica blanca sosteniendo chip de IA sobre fondo azul en renderizado 3D" loading="lazy"><span class="tag tag--sm tag--on-photo">Seguros</span></div>
+<div class="card__body">
+<h3 class="card__title">Insurtech, la tecnología en Seguros</h3>
+<p class="card__excerpt">¿Se imaginan ser los primeros en hacer algo? Es algo que con la realidad actual no sucede, ya no había nada nuevo bajo el sol, pero Compara…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>22 ago 2024</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Seguros" class="card" href="../asistencia-multiviaje/">
+<div class="card__media"><img src="../assets/img/posts/faa256783bdd.jpg" alt="Sombrero de paja, cámara analógica, avión blanco, pasaporte y reloj en composición de viaje sobre fondo azul" loading="lazy"><span class="tag tag--sm tag--on-photo">Seguros</span></div>
+<div class="card__body">
+<h3 class="card__title">Conoce la nueva Asistencia Multiviaje</h3>
+<p class="card__excerpt">En Compara somos fans de muchas cosas, pero hay una que seguro tú también lo eres, y es viajar. Conocer nuevas culturas, organizar el mapa…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>16 ago 2024</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../de-honduras-a-chile/">
+<div class="card__media"><img src="../assets/img/posts/38cc99bf397c.jpg" alt="Mujer en selfie dentro de centro comercial con decoración de bolas multicolor suspendidas en techo" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">De Honduras a Chile, sin escalas</h3>
+<p class="card__excerpt">Ella es Eunice, es de Honduras y trabaja en Compara hace casi 3 años. Hace unas semanas viajó 5637 km hasta Chile para encontrarse con sus…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>16 ago 2024</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+<a data-cat="Actualidad" class="card" href="../trabajo-remoto/">
+<div class="card__media"><img src="../assets/img/posts/ee2ddce16c18.jpg" alt="5E099E69-64E6-4FE0-AFCB-E965EF398B85-524-000002169E671383_Original(02)" loading="lazy"><span class="tag tag--sm tag--on-photo">Actualidad</span></div>
+<div class="card__body">
+<h3 class="card__title">Si yo fuera Elisa, viviría como ella</h3>
+<p class="card__excerpt">Hoy les vamos a contar la historia de Elisa, más conocida por sus amigos de Compara como &quot;Bee&quot;. Es de Bahía, Brasil (sí, ahí donde…</p>
+<div class="byline"><span class="byline__name">Dana de Elia</span><span class="byline__sep">·</span><span>16 ago 2024</span><span class="byline__sep">·</span><span>2 min</span></div>
+</div>
+</a>
+</div>
+<div class="library-more"><button class="btn btn--outline btn--lg" type="button" id="loadMore">Cargar más</button></div>
+</section>
+<script>
+(function(){
+  var movil = window.matchMedia('(max-width:640px)');
+  function porPagina(){ return movil.matches ? 6 : 9; }
+  var POR_PAGINA = porPagina();
+  var grid = document.getElementById('libraryGrid');
+  var todas = Array.prototype.slice.call(grid.children);
+  var boton = document.getElementById('loadMore');
+  var filtro = 'Todo', mostradas = POR_PAGINA;
+
+  function pintar(){
+    var visibles = todas.filter(function(c){
+      return filtro === 'Todo' || c.getAttribute('data-cat') === filtro;
+    });
+    todas.forEach(function(c){ c.hidden = true; });
+    visibles.slice(0, mostradas).forEach(function(c){ c.hidden = false; });
+    boton.hidden = visibles.length <= mostradas;
+    var vacio = document.getElementById('libraryEmpty');
+    if (vacio) vacio.hidden = visibles.length > 0;
+  }
+
+  boton.addEventListener('click', function(){ mostradas += porPagina(); pintar(); });
+
+  function seleccionar(cat){ filtro = cat; mostradas = porPagina(); pintar(); }
+
+  // Al cruzar el breakpoint cambia el tamaño de página; se re-pinta desde
+  // el inicio para no quedar con un conteo del otro layout.
+  movil.addEventListener('change', function(){ mostradas = porPagina(); pintar(); });
+
+  document.querySelectorAll('.filter__pill').forEach(function(p){
+    p.addEventListener('click', function(){
+      document.querySelectorAll('.filter__pill').forEach(function(o){
+        o.setAttribute('aria-selected','false'); });
+      p.setAttribute('aria-selected','true');
+      seleccionar(p.getAttribute('data-cat'));
+    });
+  });
+
+  var fm = document.getElementById('filterMobile');
+  if (fm) {
+    var trigger = fm.querySelector('.filter-mobile__current');
+    var value = fm.querySelector('.filter-mobile__value');
+    trigger.addEventListener('click', function(){
+      var open = fm.classList.toggle('is-open');
+      trigger.setAttribute('aria-expanded', String(open));
+    });
+    fm.querySelectorAll('.filter-mobile__option').forEach(function(opt){
+      opt.addEventListener('click', function(){
+        var prev = value.textContent;
+        value.textContent = opt.textContent; opt.textContent = prev;
+        fm.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded','false');
+        seleccionar(value.textContent);
+      });
+    });
+  }
+
+  // Deep-link desde el nav: /biblioteca-de-publicaciones?cat=Finanzas
+  var cat = new URLSearchParams(location.search).get('cat');
+  if (cat) {
+    var pill = document.querySelector('.filter__pill[data-cat="' + cat + '"]');
+    if (pill) pill.click();
+  } else { pintar(); }
+})();
+</script>
+<footer class="newsletter" id="newsletter">
+<div class="newsletter__inner">
+<h2 class="newsletter__title">No te pierdas de nada, suscríbete y elige <span class="serif">mejor</span></h2>
+<div class="newsletter__form" id="hubspotNewsletterForm"><form class="newsletter__mock" onsubmit="return false"><input type="email" placeholder="Tu correo" aria-label="Tu correo"><button type="submit">Suscribirme</button></form></div>
+
+<img class="newsletter__mark" src="../assets/logo/mark_white.svg" alt="" aria-hidden="true">
+</div>
+</footer>
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var panel = document.getElementById('mobileNav');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var abrir = panel.hidden;
+    panel.hidden = !abrir;
+    btn.setAttribute('aria-expanded', String(abrir));
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+// El mensaje de "gracias por suscribirte" viene del iframe de HubSpot en
+// blanco (pensado para un fondo oscuro); nuestra tarjeta es blanca porque
+// ahí SÍ necesitábamos que sus labels grises se leyeran. No hay forma de
+// pintar el texto del iframe desde acá (cross-origin), así que se escucha
+// el postMessage que dispara HubSpot al enviar el form y se oscurece la
+// tarjeta recién en ese momento — así el mismo texto blanco que antes era
+// invisible queda legible.
+window.addEventListener('message', function(ev){
+  if (ev.data && ev.data.type === 'hsFormCallback' && ev.data.eventName === 'onFormSubmitted') {
+    var tarjeta = document.getElementById('hubspotNewsletterForm');
+    if (!tarjeta) return;
+    // El mensaje de éxito es más corto que el form (2 campos + labels), así
+    // que la tarjeta se encogía de golpe al cambiar de contenido. Se fija
+    // la altura que tenía justo antes del cambio — medida en vivo, no un
+    // número fijo, porque varía según breakpoint y si hubo errores de
+    // validación mostrados.
+    tarjeta.style.minHeight = tarjeta.getBoundingClientRect().height + 'px';
+    tarjeta.classList.add('newsletter__form--enviado');
+  }
+});
+</script>
+</body>
+</html>

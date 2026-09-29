@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://charlie-pixelz.github.io/el-comparador/sitemap.xml

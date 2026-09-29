@@ -1,0 +1,351 @@
+/* ==========================================================================
+   El Comparador — Blog templates (plain HTML + CSS export)
+   Desktop-first. The @media (max-width:640px) block at the end carries the
+   mobile layout of the same three templates.
+   Tokens are copied verbatim from the design system (tokens/*.css).
+   ========================================================================== */
+
+/* --- Webfonts ----------------------------------------------------------- */
+@font-face{font-family:"DM Serif Display";font-style:normal;font-weight:400;font-display:swap;src:url("../assets/fonts/DMSerifDisplay-Regular.ttf") format("truetype")}
+@font-face{font-family:"DM Serif Display";font-style:italic;font-weight:400;font-display:swap;src:url("../assets/fonts/DMSerifDisplay-Italic.ttf") format("truetype")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url("../assets/fonts/Poppins-Regular.ttf") format("truetype")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url("../assets/fonts/Poppins-SemiBold.ttf") format("truetype")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:swap;src:url("../assets/fonts/Poppins-Bold.ttf") format("truetype")}
+
+/* --- Tokens ------------------------------------------------------------- */
+:root{
+/* brand palette */
+--ec-bg:#F1F5F9;--ec-primary-100:#C2D9FF;--ec-primary-200:#779BFF;--ec-primary-300:#4168FF;--ec-brand:#103AD9;--ec-primary-050:#E8F0FF;--ec-brand-hover:#0C2FB0;
+/* neutrals */
+--ec-white:#FFFFFF;--ec-ink-900:#0F172A;--ec-ink-700:#334155;--ec-ink-500:#64748B;--ec-ink-300:#CBD5E1;--ec-ink-200:#E2E8F0;--ec-ink-100:#EEF2F7;
+/* semantic */
+--surface-page:var(--ec-bg);--surface-card:var(--ec-white);--surface-sunken:var(--ec-ink-100);--surface-brand:var(--ec-brand);--surface-brand-soft:var(--ec-primary-100);--surface-brand-wash:var(--ec-primary-050);--surface-inverse:var(--ec-ink-900);
+--text-heading:var(--ec-ink-900);--text-body:var(--ec-ink-700);--text-muted:var(--ec-ink-500);--text-brand:var(--ec-brand);--text-inverse:var(--ec-white);--text-on-brand:var(--ec-white);
+--text-eyebrow:var(--ec-brand);--text-eyebrow-onDark:var(--ec-primary-200);--text-highlight:var(--ec-primary-300);
+--border-subtle:var(--ec-ink-200);--border-strong:var(--ec-ink-300);--border-brand:var(--ec-brand);--focus-ring:var(--ec-primary-300);
+/* type */
+--font-serif:"DM Serif Display","Playfair Display",Georgia,serif;
+--font-sans:"Poppins",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+--font-display:var(--font-sans);
+--fw-regular:400;--fw-semibold:600;--fw-bold:700;
+--fs-display-1:4.5rem;--fs-display-2:3.5rem;--fs-h1:2.5rem;--fs-h2:2rem;--fs-h3:1.5rem;--fs-h4:1.25rem;--fs-body-lg:1.125rem;--fs-body:1rem;--fs-body-sm:.875rem;--fs-caption:.75rem;--fs-eyebrow:1.375rem;--fs-eyebrow-sm:1rem;
+--lh-display:1.02;--lh-tight:1.1;--lh-snug:1.25;--lh-normal:1.55;--lh-relaxed:1.7;
+--tracking-display:-.02em;--tracking-tight:-.01em;--tracking-normal:0;--tracking-wide:.02em;--tracking-eyebrow:.005em;
+/* spacing / widths */
+--measure-prose:68ch;--container-sm:640px;--container-md:960px;--container-lg:1200px;--container-xl:1360px;
+/* effects */
+--radius-sm:6px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;--radius-pill:999px;
+--border-hairline:1px solid var(--border-subtle);
+--shadow-xs:0 1px 2px rgba(15,23,42,.06);
+--shadow-sm:0 1px 2px rgba(15,23,42,.06),0 2px 6px rgba(15,23,42,.06);
+--shadow-md:0 2px 4px rgba(15,23,42,.06),0 8px 20px rgba(15,23,42,.08);
+--shadow-lg:0 4px 12px rgba(15,23,42,.08),0 18px 40px rgba(16,58,217,.12);
+--shadow-brand:0 10px 28px rgba(16,58,217,.28);
+--scrim-bottom:linear-gradient(to top,rgba(9,14,30,.82) 0%,rgba(9,14,30,.55) 22%,rgba(9,14,30,.12) 48%,rgba(9,14,30,0) 70%);
+--scrim-top:linear-gradient(to bottom,rgba(9,14,30,.78) 0%,rgba(9,14,30,.35) 30%,rgba(9,14,30,0) 62%);
+--scrim-brand:linear-gradient(180deg,rgba(16,58,217,.10),rgba(16,58,217,.55));
+/* Override del proyecto (no viene del DS): el scrim del destacado en azul de
+   marca #103AD9 y subiendo bastante más arriba. El --scrim-bottom original se
+   apagaba al 70% y dejaba el eyebrow y la primera línea del título sin fondo. */
+--scrim-featured:linear-gradient(to top,rgba(16,58,217,.88) 0%,rgba(16,58,217,.80) 25%,rgba(16,58,217,.68) 45%,rgba(16,58,217,.54) 65%,rgba(16,58,217,.30) 80%,rgba(16,58,217,.10) 92%,rgba(16,58,217,0) 100%);
+--ease-standard:cubic-bezier(.2,0,0,1);--ease-out:cubic-bezier(.16,1,.3,1);--dur-fast:120ms;--dur-base:200ms;--dur-slow:360ms}
+
+/* --- Base --------------------------------------------------------------- */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-normal);color:var(--text-body);background:var(--surface-page);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--text-brand)}
+a:hover{color:var(--ec-brand-hover)}
+img{max-width:100%}
+/* El filtro y la paginación de la Biblioteca ocultan con la propiedad .hidden.
+   Sin esto, cualquier regla que declare `display` (ej. .card{display:flex})
+   le gana al `[hidden]{display:none}` del navegador y el elemento sigue
+   visible: era la causa de que el filtro por categoría y el botón
+   "Cargar más" no tuvieran ningún efecto visual. */
+[hidden]{display:none !important}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.001ms !important;transition-duration:.001ms !important}}
+
+/* --- Header ------------------------------------------------------------- */
+/* Padding solo horizontal: el vertical se movió a cada hijo, para que el
+   logo pueda tener SU PROPIO margen (16px) en vez de heredar el de acá.
+   Nav/CTA/nav-toggle no necesitan padding propio: sin padding vertical
+   quedan más bajos que el logo, y el align-items:center de este contenedor
+   los centra igual dentro de la altura que el logo termina definiendo —
+   mismo resultado visual que antes, solo que ahora el logo manda. */
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:10px 40px;background:var(--surface-card);border-bottom:1px solid var(--border-subtle);position:sticky;top:0;z-index:10}
+.site-header__logo{flex:1;display:flex;justify-content:flex-start;min-width:0;line-height:0;padding-block:16px}
+/* 47px = altura del header sin el logo (35px del botón + 22px arriba/abajo
+   que el header ya no aporta como padding propio) menos los 16px de margen
+   arriba y abajo. El header no crece: el logo pasa a ser, él solo, quien
+   define esa altura. El SVG viene recortado a su bbox real (ver
+   assets/logo/logo_blue.svg) — antes casi el 70% del alto del archivo era
+   espacio transparente, así que a igual "height" en CSS el isotipo se veía
+   diminuto. */
+.site-header__logo img{height:36px;width:auto;display:block}
+.site-nav{display:flex;align-items:center;justify-content:center;gap:26px;font-size:18px;font-weight:500;white-space:nowrap}
+.site-nav a{color:var(--text-body);text-decoration:none}
+.site-nav a:hover{color:var(--text-brand)}
+.site-header__cta{flex:1;display:flex;justify-content:flex-end;min-width:0}
+/* +10% puntual al CTA del header (no al .btn--sm global, que también se usa
+   fuera del header): mismo ajuste de escala que logo y nav. */
+.site-header__cta .btn--sm{padding:10px 18px;font-size:.9625rem}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;padding:0;margin:0;border:none;background:transparent;cursor:pointer}
+.nav-toggle span{width:22px;height:2px;background:var(--text-heading);border-radius:2px;transition:transform var(--dur-base) var(--ease-standard),opacity var(--dur-base) var(--ease-standard)}
+/* Hamburguesa -> X mientras el panel está abierto. */
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* Panel de navegación móvil: siempre oculto en desktop (el toggle que lo abre
+   ni siquiera se muestra ahí). En mobile, [hidden] lo esconde por defecto —
+   el JS solo saca/pone ese atributo. */
+.mobile-nav{display:none}
+
+/* --- Button ------------------------------------------------------------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-sans);font-weight:600;line-height:1;letter-spacing:var(--tracking-tight);border-radius:var(--radius-pill);border:1.5px solid transparent;cursor:pointer;text-decoration:none;padding:13px 22px;font-size:var(--fs-body);transition:background var(--dur-fast) var(--ease-standard),transform var(--dur-fast) var(--ease-standard),box-shadow var(--dur-base) var(--ease-standard)}
+.btn--sm{padding:9px 16px;font-size:var(--fs-body-sm)}
+.btn--lg{padding:16px 30px;font-size:var(--fs-body-lg)}
+.btn--primary{background:var(--surface-brand);color:var(--text-on-brand);box-shadow:var(--shadow-brand)}
+.btn--primary:hover{background:var(--ec-brand-hover);color:var(--text-on-brand)}
+.btn--secondary{background:var(--surface-brand-soft);color:var(--text-brand)}
+.btn--secondary:hover{background:var(--ec-primary-100)}
+.btn--outline{background:transparent;color:var(--text-brand);border-color:var(--border-brand)}
+.btn--outline:hover{background:var(--surface-brand-wash);color:var(--text-brand)}
+.btn--ghost{background:transparent;color:var(--text-brand)}
+.btn--ghost:hover{background:var(--surface-brand-wash)}
+.btn--on-dark{background:var(--ec-white);color:var(--text-brand);box-shadow:var(--shadow-md)}
+.btn--on-dark:hover{background:var(--ec-primary-050);color:var(--text-brand)}
+.btn:active{transform:translateY(1px);box-shadow:none}
+.btn--block{width:100%}
+
+/* --- Category tag / filter --------------------------------------------- */
+.tag{display:inline-flex;align-items:center;font-family:var(--font-sans);font-weight:600;font-size:var(--fs-body-sm);letter-spacing:var(--tracking-wide);line-height:1;padding:6px 14px;border-radius:var(--radius-pill);white-space:nowrap;background:var(--surface-brand-soft);color:var(--text-brand);border:none}
+.tag--sm{padding:4px 10px;font-size:var(--fs-caption)}
+.tag--on-photo{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.filter{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.filter__pill{display:inline-flex;align-items:center;font-family:var(--font-sans);font-weight:600;font-size:13px;line-height:1;letter-spacing:var(--tracking-wide);padding:8px 18px;border-radius:var(--radius-pill);cursor:pointer;white-space:nowrap;background:var(--surface-card);color:var(--text-body);border:1px solid transparent;transition:border-color var(--dur-base) var(--ease-standard),background var(--dur-base) var(--ease-standard),color var(--dur-base) var(--ease-standard)}
+.filter__pill:hover{border-color:var(--ec-brand)}
+.filter__pill[aria-selected="true"]{background:var(--surface-brand);color:var(--text-on-brand);border-color:transparent}
+/* mobile accordion filter — hidden on desktop */
+.filter-mobile{display:none}
+.filter-mobile__label{font-weight:600;font-size:15px;color:var(--text-heading)}
+.filter-mobile__current{display:inline-flex;align-items:center;gap:10px;padding:9px 18px;border-radius:var(--radius-pill);background:var(--surface-brand);color:var(--text-on-brand);border:none;font-family:var(--font-sans);font-weight:600;font-size:14px;letter-spacing:var(--tracking-wide);cursor:pointer}
+.filter-mobile__caret{display:inline-block;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid currentColor}
+.filter-mobile__list{display:none;flex-direction:column;margin-top:12px;border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;background:var(--surface-card);box-shadow:var(--shadow-sm)}
+.filter-mobile.is-open .filter-mobile__list{display:flex}
+.filter-mobile__option{text-align:left;padding:14px 18px;background:transparent;border:none;border-bottom:1px solid var(--border-subtle);font-family:var(--font-sans);font-weight:500;font-size:15px;color:var(--text-body);cursor:pointer}
+.filter-mobile__option:last-child{border-bottom:none}
+
+/* --- Article card ------------------------------------------------------- */
+.card{display:flex;flex-direction:column;background:var(--surface-card);border-radius:var(--radius-lg);overflow:hidden;text-decoration:none;color:inherit;border:var(--border-hairline);box-shadow:var(--shadow-sm);transition:box-shadow var(--dur-base) var(--ease-standard),transform var(--dur-base) var(--ease-standard)}
+.card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.card__media{position:relative;aspect-ratio:3 / 2;background:var(--surface-brand);overflow:hidden}
+.card__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.card__media .tag{position:absolute;top:14px;left:14px}
+/* Estructura interna unificada (Home y Biblioteca comparten la misma regla).
+   Las cards de una fila ya quedan a la misma altura porque el grid estira;
+   lo que se fija acá es el reparto INTERNO, para que no baile según cuánto
+   texto tenga cada post:
+     · título  — hasta 3 líneas, con 2 líneas siempre reservadas
+     · hook    — exactamente 2 líneas de alto, siempre
+     · autor   — empujado al fondo (margin-top:auto), así queda a la misma
+                 altura en todas las cards de la fila                        */
+.card__body{display:flex;flex-direction:column;gap:10px;padding:20px 22px 22px;flex:1;min-width:0}
+/* El título NO se recorta: es verbatim por contrato (SPEC_EXTRACCION).
+   min-height reserva 2 líneas para que el bloque no baile con títulos
+   cortos; los más largos crecen y el grid iguala la altura de la fila.
+   Sin overflow:hidden a propósito — con line-height 1.02 recortaría los
+   descendentes de la última línea. */
+.card__title{margin:0;font-family:var(--font-display);font-weight:700;font-size:var(--fs-h3);line-height:var(--lh-display);letter-spacing:var(--tracking-display);color:var(--text-heading);text-wrap:pretty;overflow-wrap:break-word;transition:color var(--dur-base) var(--ease-standard);min-height:calc(2 * var(--lh-display) * var(--fs-h3))}
+.card:hover .card__title{color:var(--text-brand)}
+/* Hook: mínimo 2 líneas reservadas (el "punto medio" común entre cards),
+   máximo 4. El recorte con puntos suspensivos en palabra completa lo hace
+   limpiador.py, así que el clamp de 4 es solo una red de seguridad y no
+   debería activarse nunca. */
+.card__excerpt{margin:0;font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-snug);color:var(--text-muted);text-wrap:pretty;overflow-wrap:break-word;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;min-height:calc(2 * var(--lh-snug) * var(--fs-body))}
+.byline{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:var(--fs-body-sm);font-weight:500;color:var(--text-muted);margin-top:auto;padding-top:4px}
+/* La byline del artículo no vive en una card: no debe empujarse al fondo. */
+.article-hero__meta,.prose .byline{margin-top:4px}
+.byline__name{color:var(--text-heading);font-weight:600}
+.byline__sep{opacity:.55}
+
+/* --- Grids -------------------------------------------------------------- */
+.grid{display:grid;gap:26px;grid-template-columns:repeat(3,1fr)}
+.grid--related{gap:24px}
+
+/* --- Newsletter band (shared footer) ----------------------------------- */
+.newsletter{position:relative;overflow:hidden;background:var(--ec-brand);color:#fff;margin-top:24px}
+.newsletter__inner{max-width:1110px;margin:0 auto;padding:50px 32px;text-align:center;position:relative;display:flex;flex-direction:column;align-items:center;gap:20px}
+.newsletter__title{margin:0;font-family:var(--font-sans);font-weight:600;font-size:31px;line-height:1.1;letter-spacing:-.02em;color:#fff;text-wrap:balance}
+.newsletter__title .serif{font-family:var(--font-serif);font-style:italic;font-weight:400;font-size:34px;color:var(--ec-primary-100)}
+/* Envuelve el iframe del form real de HubSpot (portalId 22319441). Antes
+   esto era un <input>+<button> nuestros; ahora es contenido cross-origin
+   que no podemos restylear desde acá. Sus labels vienen en gris oscuro fijo
+   desde HubSpot — ilegibles sobre el azul #103AD9 del footer — así que se
+   les da una tarjeta clara de fondo en vez de dejarlos flotando sobre el
+   azul. Arreglo definitivo pendiente de Growth: activar el embed "raw
+   HTML" del form en HubSpot (en vez del iframe) para poder restylearlo
+   entero con nuestro CSS. */
+/* 701px = ancho real del título en una línea a este tamaño (medido en
+   navegador): el título es el único texto de arriba, así que "mismo ancho
+   que el texto" es ese valor fijo, no un porcentaje. En mobile el título
+   entra en 2+ líneas y ocupa el 100% disponible — ahí .newsletter__form ya
+   calzaba solo, sin necesitar este valor (ver override abajo). */
+.newsletter__form{width:100%;max-width:701px;margin-top:8px;background:var(--surface-card);border-radius:var(--radius-lg);padding:22px 24px 18px;box-shadow:var(--shadow-md);text-align:left;transition:background var(--dur-slow) var(--ease-standard)}
+/* El mensaje de éxito que HubSpot inyecta en el iframe viene en texto
+   blanco (pensado para fondo oscuro). Al recibir el postMessage
+   onFormSubmitted (ver <script> en cascara()) se agrega esta clase para
+   oscurecer la tarjeta recién en ese momento y que el texto se lea. */
+.newsletter__form--enviado{background:var(--ec-primary-300)}
+.newsletter__mark{position:absolute;top:31px;left:1325px;width:370px;opacity:.14;pointer-events:none}
+
+/* --- Blog · Article page ----------------------------------------------- */
+.article-hero{max-width:840px;margin:0 auto;padding:64px 32px 0;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px}
+.article-hero__title{margin:0;font-weight:700;font-size:60px;line-height:1.03;letter-spacing:-.02em;color:var(--text-heading);text-wrap:balance}
+.article-hero__title .highlight{color:var(--text-highlight)}
+.article-hero__lead{margin:0;font-size:21px;line-height:1.5;color:var(--text-muted);max-width:60ch}
+.article-hero__meta{display:flex;align-items:center;flex-wrap:wrap;justify-content:center;gap:8px;font-size:14px;font-weight:500;color:var(--text-muted);margin-top:4px}
+.article-cover{max-width:1120px;margin:44px auto 0;padding:0 32px}
+.article-cover__frame{position:relative;aspect-ratio:3 / 2;border-radius:var(--radius-xl);overflow:hidden;background:var(--surface-brand)}
+.article-cover__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+/* 1120px = el mismo ancho de .article-cover y .related, para que la columna
+   de texto arranque exactamente donde arranca la portada. Antes era 1110 y
+   quedaba 5px corrida a cada lado. */
+.prose{max-width:1120px;margin:0 auto;padding:52px 32px 0;font-size:19px;line-height:1.75;color:var(--text-body)}
+.prose p{margin:0 0 1.1em}
+/* El <figure> trae margin:1em 40px del navegador, así que las imágenes
+   quedaban 40px más adentro que los párrafos. Se iguala a 0 lateral: el
+   ancho de la columna lo define .prose y no el UA stylesheet. */
+.prose__figure{margin:1.8em 0}
+.prose__figure img{display:block;width:100%;border-radius:var(--radius-lg)}
+.prose h2{margin:1.6em 0 .5em;font-family:var(--font-display);font-weight:700;font-size:30px;line-height:1.15;letter-spacing:-.01em;color:var(--text-heading)}
+.prose blockquote{margin:1.8em 0;text-align:center;font-family:var(--font-serif);font-style:italic;font-size:30px;line-height:1.3;color:var(--text-brand)}
+.related{max-width:1120px;margin:72px auto 0;padding:56px 32px;border-top:1px solid var(--border-subtle)}
+.related__title{margin:0 0 28px;font-weight:700;font-size:28px;letter-spacing:-.01em;color:var(--text-heading)}
+
+/* --- Blog · Homepage feed ---------------------------------------------- */
+.featured{max-width:1200px;margin:0 auto;padding:40px 32px 0}
+.featured__frame{position:relative;aspect-ratio:2 / 1;border-radius:var(--radius-xl);overflow:hidden;background:var(--surface-brand)}
+.featured__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.featured__scrim{position:absolute;inset:0;background:var(--scrim-featured);pointer-events:none}
+.featured__content{position:absolute;inset:0;padding:56px;display:flex;flex-direction:column;justify-content:flex-end;gap:16px;max-width:70%}
+/* Blanco, no el celeste --ec-primary-100 del DS: el celeste no tenía
+   contraste propio sobre las zonas claras de las portadas y obligaba a un
+   scrim tan fuerte que borraba la ilustración. En blanco alcanza un scrim
+   suave. La itálica serif sigue diferenciándolo del título. */
+.featured__eyebrow{margin:0;font-family:var(--font-serif);font-size:26px;color:var(--ec-white)}
+.featured__title{margin:0;font-weight:700;font-size:56px;line-height:1.02;letter-spacing:-.02em;color:#fff;text-wrap:balance}
+.featured__title .highlight{color:var(--ec-primary-200)}
+.featured__sub{margin:0;font-size:20px;line-height:1.4;color:rgba(255,255,255,.9)}
+.feed{max-width:1200px;margin:0 auto;padding:56px 32px 40px}
+.feed__title{margin:0 0 28px;font-weight:700;font-size:30px;letter-spacing:-.01em;color:var(--text-heading)}
+.feed__more{display:flex;justify-content:center;margin-top:40px;padding-top:20px}
+
+/* --- Blog · Biblioteca ------------------------------------------------- */
+.library-hero{position:relative;width:100%;aspect-ratio:1920 / 500;overflow:hidden;background:var(--surface-brand)}
+.library-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+/* Sin scrim: la portada nueva ya es fondo azul y el título blanco lee bien
+   directo sobre la imagen (decisión de Charlie). */
+/* max-width + margin:auto igual que .library-filter/.library-grid: en
+   viewports anchos (>1264px) el padding a secas quedaba pegado al borde de
+   la ventana mientras las cards ya estaban centradas en una columna de
+   1200px, y el título del hero no calzaba con ellas. */
+.library-hero__content{position:absolute;inset:0;max-width:1200px;margin:0 auto;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:0 32px}
+.library-hero__title{margin:0;font-family:var(--font-sans);font-weight:700;font-size:39px;line-height:1.05;letter-spacing:-.02em;color:#fff;text-wrap:balance;max-width:20ch;text-align:left}
+.library-hero__title .serif{font-family:var(--font-serif);font-style:italic;font-weight:400;font-size:43px;color:var(--ec-primary-100)}
+.library-filter{max-width:1200px;margin:0 auto;padding:44px 32px 0}
+.library-grid{max-width:1200px;margin:0 auto;padding:40px 32px 0}
+.library-more{display:flex;justify-content:center;margin-top:48px}
+.library .newsletter{margin-top:80px}
+
+/* ==========================================================================
+   Desktop scale-down: Charlie pidió que el desktop se vea como al 80% de
+   zoom del navegador (más "aire" a los costados, texto e imágenes más
+   compactos). zoom (no transform:scale) replica exactamente ese efecto:
+   reduce todo proporcionalmente y el layout recalcula el ancho disponible
+   igual que un zoom-out real, así el --container-lg de 1200px queda con más
+   margen lateral en vez de recortarse. No toca mobile (bajo 641px).
+   ========================================================================== */
+@media (min-width:641px){
+body{zoom:.8}
+}
+
+/* ==========================================================================
+   Mobile (the 414px column of the templates, fluid)
+   ========================================================================== */
+@media (max-width:640px){
+/* 50px = altura que el header tenía antes por el nav-toggle (40px + 15px
+   arriba/abajo del padding viejo) menos los 16px de margen del logo. El
+   nav-toggle no necesita padding propio: align-items:center lo sigue
+   centrando igual que antes dentro de la altura que ahora define el logo. */
+.site-header{padding:0 20px;gap:16px}
+.site-header__logo{flex:0 0 auto}
+.site-header__logo img{height:38px}
+.site-nav,.site-header__cta{display:none}
+.nav-toggle{display:flex}
+.mobile-nav:not([hidden]){display:flex;flex-direction:column;gap:2px;padding:8px 20px 24px;background:var(--surface-card);border-bottom:1px solid var(--border-subtle);position:sticky;top:71px;z-index:9}
+/* :not(.btn): el "Suscríbete" de acá abajo es un <a class="btn btn--primary">,
+   y esta regla (un elemento + una clase) tiene más especificidad que
+   .btn--primary (una clase sola) — sin el :not le pisaba el color blanco
+   dejando el texto gris ilegible sobre el botón azul. */
+.mobile-nav a:not(.btn){padding:13px 4px;font-family:var(--font-sans);font-weight:500;font-size:16px;color:var(--text-body);text-decoration:none;border-bottom:1px solid var(--border-subtle)}
+.mobile-nav a:not(.btn):hover{color:var(--text-brand)}
+.mobile-nav .btn{margin-top:14px}
+
+.grid,.grid--related{grid-template-columns:1fr;gap:22px}
+
+/* Article */
+.article-hero{padding:36px 22px 0;gap:16px}
+.article-hero__title{font-size:34px;line-height:1.06}
+.article-hero__lead{font-size:17px}
+.article-hero__meta{font-size:13px;margin-top:2px}
+.article-cover{margin:28px auto 0;padding:0 22px}
+.article-cover__frame{border-radius:var(--radius-lg)}
+/* Punto medio: los párrafos estaban a 22px (muy al borde) y las imágenes a
+   62px (22 + los 40 del figure). Ahora ambos a 26px. */
+.prose{padding:36px 26px 0;font-size:17px;line-height:1.7}
+.prose__figure{margin:1.5em 0}
+.prose__figure img{border-radius:var(--radius-md)}
+.prose h2{margin:1.5em 0 .5em;font-size:23px;line-height:1.18}
+.prose blockquote{margin:1.6em 0;font-size:23px;line-height:1.32}
+.related{margin:44px auto 0;padding:40px 22px}
+.related__title{margin:0 0 22px;font-size:22px}
+.grid--related{gap:20px}
+.card--related-3{display:none} /* mobile shows two related cards */
+
+/* Feed */
+.featured{padding:22px 22px 0}
+.featured__frame{aspect-ratio:4 / 5;border-radius:var(--radius-lg)}
+.featured__content{padding:28px 24px;gap:12px;max-width:100%}
+.featured__eyebrow{font-size:20px}
+.featured__title{font-size:32px;line-height:1.05}
+.featured__sub{font-size:16px}
+.feed{padding:36px 22px 40px}
+.feed__title{margin:0 0 22px;font-size:24px}
+.feed__more{margin-top:32px;padding-top:0}
+.feed__more .btn{width:100%}
+.card--feed-hide{display:none} /* mobile feed shows four cards */
+
+/* Biblioteca */
+.library-hero{aspect-ratio:700 / 315}
+.library-hero__content{padding:0 24px}
+.library-hero__title{font-size:27px;line-height:1.08;max-width:15ch}
+.library-hero__title .serif{font-size:30px}
+.library-filter{display:none}
+.filter-mobile{display:block;padding:28px 22px 0}
+.filter-mobile__row{display:flex;align-items:center;gap:12px}
+.library-grid{padding:28px 22px 0}
+.library-grid .grid{gap:16px}
+.library-more{margin-top:32px}
+.library-more .btn{width:60%}
+.card--library-hide{display:none} /* mobile library shows six cards */
+.library .newsletter{margin-top:56px}
+
+/* Newsletter */
+.newsletter{margin-top:0}
+.newsletter__inner{padding:44px 24px;gap:18px}
+.newsletter__title{font-size:26px;line-height:1.12}
+.newsletter__title .serif{font-size:28px}
+.newsletter__form{max-width:none;margin-top:0;padding:20px 20px 16px}
+.newsletter__mark{display:none}
+}
+
+.newsletter__mock{display:flex;gap:12px;flex-wrap:wrap}.newsletter__mock input{flex:1 1 220px;min-width:0;padding:12px 14px;border:1px solid #cfd4dc;border-radius:8px;font:inherit}.newsletter__mock button{padding:12px 20px;border:0;border-radius:8px;background:var(--ec-primary-500,#0a4dff);color:#fff;font:inherit;font-weight:600;cursor:pointer}
