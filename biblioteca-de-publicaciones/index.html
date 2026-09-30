@@ -34,7 +34,7 @@
 </nav>
 <section class="library-hero">
 <picture>
-<source media="(max-width:640px)" srcset="/assets/img/nueva_portada_mobile.png">
+<source media="(max-width:640px)" srcset="../assets/img/nueva_portada_mobile.png">
 <img src="../assets/img/nueva_portada_desktop.png" alt="">
 </picture>
 <div class="library-hero__content">
@@ -1134,9 +1134,19 @@
 
   // Deep-link desde el nav: /biblioteca-de-publicaciones?cat=Finanzas
   var cat = new URLSearchParams(location.search).get('cat');
-  if (cat) {
-    var pill = document.querySelector('.filter__pill[data-cat="' + cat + '"]');
-    if (pill) pill.click();
+  var pill = null;
+  document.querySelectorAll('.filter__pill').forEach(function(p){
+    if (cat && p.getAttribute('data-cat') === cat) pill = p;
+  });
+  if (pill) {
+    pill.click();
+    // El selector móvil intercambia el texto de la opción con el valor actual;
+    // se replica ese intercambio para que muestre la categoría del enlace.
+    if (fm && cat !== 'Todo') {
+      fm.querySelectorAll('.filter-mobile__option').forEach(function(opt){
+        if (opt.textContent === cat) { opt.textContent = value.textContent; value.textContent = cat; }
+      });
+    }
   } else { pintar(); }
 })();
 </script>
